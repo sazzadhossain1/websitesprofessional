@@ -1,0 +1,27 @@
+.heroSection_parent_div {
+  position: relative;
+  background: url("../../accts//hero_photo/heroPhoto.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+}
+.heroSection_parent_div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* Adjust the alpha value (0.5) to control darkness */
+  z-index: 1;
+}
+.heroSection_parent_div * {
+  position: relative;
+  z-index: 2;
+}

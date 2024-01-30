@@ -1,0 +1,165 @@
+.navigation_main_parent_div {
+}
+.navigation_second_parent_div {
+  background-color: rgb(243, 244, 246);
+  padding: 7px;
+}
+.navigation_parent_div {
+  display: flex;
+  justify-content: space-between;
+  width: 74%;
+  margin: auto;
+}
+.navigation_email_div {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.icon_div {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.nav_envelope_icon {
+  font-size: 12px;
+}
+.nav_phone_icon {
+  font-size: 12px;
+}
+small {
+  margin-left: 5px;
+}
+
+.navigation_login_signUp_div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav_btn {
+  border: 2px solid rgb(165, 165, 165);
+  font-size: 12px;
+  font-weight: 700;
+  width: 95px;
+  padding: 3px;
+}
+
+.nav_btn:hover {
+  background-color: #f6bb17;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ===================== */
+.nav_menu_main_parent_div {
+  background-color: white;
+}
+.nav_menu_parent_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  /* background-color: red; */
+}
+.menu_icons {
+  display: none;
+}
+.navigationLogo {
+  width: 22%;
+  padding: 6px;
+}
+
+.unOrderLink {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: -50px;
+}
+
+.unOrderLink li {
+  font-size: 13px;
+  font-weight: 700;
+}
+.login {
+  display: none;
+}
+.signUP {
+  display: none;
+}
+.unOrderLink li:hover {
+  color: #f6bb17;
+}
+
+@media screen and (max-width: 1150px) {
+  .nav_menu_parent_div {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .nav_menu_parent_div {
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .navigation_second_parent_div {
+    display: none;
+  }
+  .nav_menu_main_parent_div {
+    z-index: 99;
+  }
+
+  .unOrderLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 49px;
+    left: -60%;
+    align-items: stretch;
+    padding: 15px;
+    transition: all 0.7s ease-in-out;
+    z-index: 1;
+  }
+
+  .unOrderLink.active {
+    left: 0%;
+  }
+  .unOrderLink li {
+    color: white;
+  }
+
+  .menu_icons {
+    display: block;
+  }
+  .login {
+    display: block;
+  }
+  .signUP {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .unOrderLink {
+    top: 48px;
+  }
+}
+@media screen and (max-width: 747px) {
+  .unOrderLink {
+    top: 47px;
+  }
+}
+@media screen and (max-width: 709px) {
+  .unOrderLink {
+    top: 47px;
+  }
+}
+@media screen and (max-width: 709px) {
+  .unOrderLink {
+    top: 45px;
+  }
+}
