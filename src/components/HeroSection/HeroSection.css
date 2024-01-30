@@ -1,27 +1,26 @@
 .heroSection_parent_div {
   position: relative;
   background: url("../../accts//hero_photo/heroPhoto.png");
+  background-color: rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 80vh;
+  background-blend-mode: darken;
+  /* background-attachment: fixed; */
 }
-.heroSection_parent_div::before {
-  content: "";
+
+.attract_h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 500;
+  font-family: IvyMode;
+  color: black;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.1
-  ); /* Adjust the alpha value (0.5) to control darkness */
-  z-index: 1;
+  margin-top: 200px;
+  margin-left: 500px;
 }
-.heroSection_parent_div * {
-  position: relative;
-  z-index: 2;
+@media screen and (max-width: 950px) {
+  .heroSection_parent_div {
+  }
 }

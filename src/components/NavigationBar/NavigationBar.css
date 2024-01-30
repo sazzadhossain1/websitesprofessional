@@ -96,8 +96,21 @@ small {
   }
 }
 @media screen and (max-width: 950px) {
+  .navigation_second_parent_div {
+  }
+  .nav_menu_main_parent_div {
+  }
   .nav_menu_parent_div {
     width: 100%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 871px) {
+  .navigation_second_parent_div {
+    width: 100%;
+  }
+  .nav_menu_parent_div {
+    width: 90%;
     padding: 10px;
   }
 }
