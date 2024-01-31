@@ -1,0 +1,18 @@
+.projects_parent_div {
+  padding: 20px;
+}
+.Projects_heading {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.projects_photo_grid_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 20px;
+  margin: auto;
+}
+.projects_photo {
+  width: 100%;
+}

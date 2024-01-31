@@ -1,0 +1,92 @@
+.Services {
+  /* margin-top: 236px; */
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.service_grid_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+}
+.service_cart_parent_div {
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), 0 0px 15px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(255, 255, 255, 0.4);
+  height: 400px;
+  position: relative;
+}
+.services_cart_header {
+  background-color: #f5f2ec;
+  padding: 25px 25px;
+  padding-bottom: 130px;
+  margin-bottom: 20px;
+  height: 150px;
+}
+.services_cart_heading {
+  font-size: 21px;
+  font-weight: 500;
+}
+.service_price {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.services_body_text_div {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.services_body_text_div p {
+  font-size: 15px;
+}
+
+.service_subscribe_btn {
+  width: 130px;
+  background-color: #f6bb17;
+  padding: 10px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 1px #ae9d78;
+  position: absolute;
+  bottom: 0;
+  left: 37%;
+}
+
+.service_subscribe_btn:hover {
+  background-color: #ae9d78;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  color: white;
+}
+
+.service_cart_parent_div_last {
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), 0 10px 20px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(255, 255, 255, 0.4);
+  width: 29%;
+  margin: auto;
+  margin-top: 50px;
+  height: 380px;
+}
+.service_subscribe_btn_last {
+  width: 130px;
+  background-color: #f6bb17;
+  padding: 10px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 1px #ae9d78;
+}
+.service_subscribe_btn_last:hover {
+  background-color: #ae9d78;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  color: white;
+}
