@@ -1,0 +1,22 @@
+.about_me_heading {
+  font-size: 3rem;
+  margin-top: 30px;
+}
+.hi_i_am {
+  font-size: 23px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.about_me_grid_div {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  gap: 50px;
+}
+.CristianeAbreu {
+  width: 400px;
+}
+.about_me_text_div {
+  text-align: justify;
+}

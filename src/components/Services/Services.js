@@ -64,7 +64,28 @@ const Services = () => {
             <button className="service_subscribe_btn">Subscribe</button>
           </Link>
         </div>
+
+        {/* --------------------------------- */}
+        <div className="service_cart_parent_div_first_last">
+          <div className="services_cart_header">
+            <h2 className="services_cart_heading">Want a Custom Build</h2>
+            <p className="service_price">Make Your Own Budget Plan</p>
+          </div>
+
+          <div className="services_body_text_div">
+            <p>
+              For custom package, please contact us and we will be happy to
+              assist you
+            </p>
+          </div>
+          <Link>
+            <button className="service_subscribe_btn_last">Subscribe</button>
+          </Link>
+        </div>
+
+        {/* ------------------------- */}
       </div>
+
       <div className="service_cart_parent_div_last">
         <div className="services_cart_header">
           <h2 className="services_cart_heading">Want a Custom Build</h2>

@@ -1,0 +1,21 @@
+.blogPost_parent_div {
+  background-color: #fcf9f4;
+  padding: 20px;
+}
+
+.latest_blog_post {
+  font-size: 40px;
+  margin-top: 30px;
+}
+.blogPost_Photo_grid_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 14px;
+  width: 80%;
+  margin: auto;
+  margin-top: 35px;
+}
+.blogPost_Photo {
+  width: 100%;
+}
