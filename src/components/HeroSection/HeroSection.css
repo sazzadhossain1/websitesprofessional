@@ -83,6 +83,23 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+  .heroPhoto {
+    height: 30vh;
+  }
+  .attract_h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-height: 914px) {
+  .heroPhoto {
+    height: 40vh;
+  }
+  .attract_h1 {
+    font-size: 30px;
+    margin-top: -290px;
+  }
+}
 @media screen and (max-width: 1024px) and (max-height: 600px) {
   .heroPhoto {
     height: 60vh;
@@ -107,6 +124,22 @@
     height: 30vh;
   }
 }
+@media screen and (max-width: 800px) and (max-height: 914px) {
+  .heroPhoto {
+    height: 30vh;
+  }
+  .attract_h1 {
+    margin-top: -240px;
+  }
+}
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+  .heroPhoto {
+    height: 30vh;
+  }
+  .attract_h1 {
+    margin-top: -240px;
+  }
+}
 @media screen and (max-width: 640px) {
   .heroPhoto {
     height: 70vh;
@@ -127,9 +160,69 @@
     margin-top: 20px;
   }
 }
+@media screen and (max-width: 640px) and (max-height: 914px) {
+  .heroPhoto {
+    height: 40vh;
+  }
+  .attract_h1 {
+    font-size: 25px;
+    margin-top: -270px;
+  }
+  .unlock_h1 {
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 22px;
+  }
+
+  .contact_us_btn {
+    padding: 12px;
+    font-size: 19px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 640px) and (max-height: 360px) {
+  .heroPhoto {
+    height: 90vh;
+  }
+  .attract_h1 {
+    font-size: 25px;
+    margin-top: -270px;
+  }
+  .unlock_h1 {
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 22px;
+  }
+
+  .contact_us_btn {
+    padding: 12px;
+    font-size: 19px;
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 600px) {
   .heroPhoto {
     height: 30vh;
+  }
+}
+@media screen and (max-width: 540px) and (max-height: 720px) {
+  .heroPhoto {
+    height: 50vh;
+  }
+  .attract_h1 {
+    font-size: 25px;
+    margin-top: -300px;
+  }
+  .unlock_h1 {
+    font-size: 18px;
+    margin-top: 18px;
+    line-height: 25px;
+  }
+
+  .contact_us_btn {
+    padding: 12px;
+    font-size: 19px;
+    margin-top: 25px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -152,6 +245,12 @@
     margin-top: 25px;
   }
 }
+@media screen and (max-width: 360px) and (max-width: 640px) {
+  .attract_h1 {
+    font-size: 25px;
+    margin-top: -250px;
+  }
+}
 @media screen and (max-width: 350px) {
   .heroPhoto {
     height: 50vh;
@@ -169,6 +268,31 @@
     padding: 12px;
     font-size: 15px;
     margin-top: 25px;
+    margin-bottom: 150px;
+  }
+}
+@media screen and (max-width: 320px) and (max-width: 533px) {
+  .attract_h1 {
+    font-size: 20px;
+    margin-top: -220px;
+  }
+}
+@media screen and (max-width: 240px) and (max-width: 320px) {
+  .attract_h1 {
+    font-size: 15px;
+    margin-top: -150px;
+  }
+
+  .unlock_h1 {
+    line-height: 18px;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .contact_us_btn {
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 10px;
     margin-bottom: 150px;
   }
 }

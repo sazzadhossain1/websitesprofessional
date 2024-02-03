@@ -1,4 +1,107 @@
 .footer_parent_div {
   background-color: #212529;
   color: #ffbf3f;
+  font-size: 15px;
+  margin-top: 50px;
+}
+.footer_grid_div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 73%;
+  margin: auto;
+  padding: 20px 0px;
+}
+.footer_Unlock {
+  margin-top: 20px;
+}
+
+.footer_Packages_div {
+  /* background-color: red; */
+  width: 60%;
+  margin: auto;
+}
+.footer_aboutMe_div {
+  /* background-color: red; */
+  width: 60%;
+  margin: auto;
+}
+.footer_link {
+  margin-top: 50px;
+  line-height: 40px;
+}
+
+.footer_contact_header {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footer_info_email {
+  margin-bottom: 20px;
+}
+.footer_number {
+  margin-bottom: 20px;
+}
+.footer_icon {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.footer_blank_div {
+  height: 1px;
+  width: 95%;
+  background-color: gray;
+  margin: auto;
+}
+.footer_flex_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+.terms_text {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer_grid_div {
+    grid-template-columns: repeat(2, 1fr);
+    width: 73%;
+  }
+  .footer_aboutMe_div {
+    margin-top: 50px;
+  }
+  .footer-contact_div {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer_grid_div {
+    grid-template-columns: repeat(1, 1fr);
+    width: 73%;
+  }
+  .footer_aboutMe_div {
+    margin-top: 50px;
+  }
+  .footer-contact_div {
+    margin-top: 50px;
+  }
+  .footer_flex_div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .copyright_div {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .terms_of_service_div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .terms_text {
+    margin: auto;
+  }
+  .privacy_text {
+    margin: auto;
+  }
 }

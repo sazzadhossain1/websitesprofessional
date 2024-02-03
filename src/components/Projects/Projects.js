@@ -14,11 +14,11 @@ const Projects = () => {
         <Link target="_blank" to="https://www.deonafrierson.com/">
           <img className="projects_photo" src={projectsPhotoOne} alt="" />
         </Link>
-        <Link>
-          <img className="projects_photo" src={projectsPhotoThree} alt="" />
-        </Link>
         <Link target="_blank" to="https://www.procureagency.com/">
           <img className="projects_photo" src={projectsPhotoTwo} alt="" />
+        </Link>
+        <Link>
+          <img className="projects_photo" src={projectsPhotoThree} alt="" />
         </Link>
       </div>
     </div>

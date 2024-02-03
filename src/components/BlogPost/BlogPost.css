@@ -19,3 +19,19 @@
 .blogPost_Photo {
   width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+  .blogPost_Photo_grid_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .blogPost_Photo_grid_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .blogPost_Photo_grid_div {
+    width: 100%;
+  }
+}

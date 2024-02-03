@@ -20,3 +20,33 @@
 .about_me_text_div {
   text-align: justify;
 }
+
+@media screen and (max-width: 1200px) {
+  .about_me_grid_div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 70%;
+    margin: auto;
+    gap: 50px;
+  }
+  .CristianeAbreu {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  .about_me_heading {
+    font-size: 30px;
+  }
+  .hi_i_am {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .about_me_grid_div {
+    width: 100%;
+    padding: 20px;
+  }
+  .CristianeAbreu {
+    margin: auto;
+  }
+}
