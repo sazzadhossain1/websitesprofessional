@@ -1,0 +1,16 @@
+.login_parent_div {
+  background-color: #fbf8f5;
+  padding: 20px;
+  margin-bottom: -47px;
+}
+.login_cart_div {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+  margin-top: 170px;
+  box-shadow: 1px 1px 20px 1px rgb(228, 228, 228);
+  border-radius: 10px;
+}
+.login_inner_div {
+}

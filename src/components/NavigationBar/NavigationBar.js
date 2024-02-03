@@ -39,7 +39,7 @@ const NavigationBar = () => {
           <div className="navigation_login_signUp_div">
             <Link to="/login">
               <button className="nav_btn">
-                <Link>Login</Link>
+                <Link to="/login">Login</Link>
               </button>
             </Link>
 
