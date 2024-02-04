@@ -9,6 +9,9 @@ import Projects from "./components/Projects/Projects";
 import AboutMe from "./components/AboutMe/AboutMe";
 import BlogPost from "./components/BlogPost/BlogPost";
 import Contact from "./components/Contact/Contact";
+import OnlineMarketing from "./components/OnlineMarketing/OnlineMarketing";
+import Seo from "./components/Seo/Seo";
+import WhenGetting from "./components/WhenGetting/WhenGetting";
 
 function App() {
   const router = createBrowserRouter([
@@ -51,6 +54,18 @@ function App() {
         {
           path: "/contact",
           element: <Contact></Contact>,
+        },
+        {
+          path: "/onlineMarketing",
+          element: <OnlineMarketing></OnlineMarketing>,
+        },
+        {
+          path: "/seo",
+          element: <Seo></Seo>,
+        },
+        {
+          path: "/whenGetting",
+          element: <WhenGetting></WhenGetting>,
         },
       ],
     },

@@ -7,20 +7,27 @@ const Login = () => {
     <div className="login_parent_div">
       <div className="login_cart_div">
         <div className="login_inner_div">
-          <h1>Sign In</h1>
+          <h1 className="sign_In_heading">Sign In</h1>
           <div>
             <div>
-              <input type="email" placeholder="Email" />
+              <input className="login_input" type="email" placeholder="Email" />
             </div>
             <div>
-              <input type="password" placeholder="Password" />
+              <input
+                className="login_input"
+                type="password"
+                placeholder="Password"
+              />
             </div>
           </div>
-          <button>Login In</button>
-          <Link>Forgot Password</Link>
+          <button className="login_btn">Log In</button>
+          <br />
+          <Link className="forgot">Forgot Password</Link>
         </div>
-        <p>Don't have account</p>
-        <Link to="/signUp">Sign up</Link>
+        <p className="dont_have">Don't have account?</p>
+        <Link className="sign_up" to="/signUp">
+          Sign up
+        </Link>
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 .blogPost_parent_div {
-  background-color: #fcf9f4;
   padding: 20px;
 }
 
@@ -18,6 +17,12 @@
 }
 .blogPost_Photo {
   width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.blogPost_Photo:hover {
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 1200px) {

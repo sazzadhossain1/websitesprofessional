@@ -1,0 +1,19 @@
+.seo_parent_div {
+  background-color: #fbf8f5;
+  padding: 20px;
+}
+.seo_photo {
+  margin: auto;
+  width: 32%;
+  border-radius: 10px;
+  margin-top: 33px;
+  margin-bottom: 30px;
+}
+.seo_text_div {
+  text-align: left;
+  width: 70%;
+  margin: auto;
+}
+.seo_parent_div p {
+  margin-bottom: 50px;
+}

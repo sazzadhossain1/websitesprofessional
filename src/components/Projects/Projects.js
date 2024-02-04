@@ -6,6 +6,9 @@ import projectsPhotoTwo from "../../accts/projects_photo/projectsPhotoTwo.png";
 import projectsPhotoThree from "../../accts/projects_photo/projectsPhotoThree.png";
 
 const Projects = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
   return (
     <div className="projects_parent_div">
       <h1 className="Projects_heading">Projects</h1>

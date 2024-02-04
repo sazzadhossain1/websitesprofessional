@@ -5,6 +5,8 @@
 }
 .blogPost_home_parent_div {
   margin-top: 100px;
+  background-color: #fcf9f4;
+  margin-bottom: -45px;
 }
 .blogPost_view_all_btn {
   width: 100px;
@@ -12,7 +14,7 @@
   padding: 10px;
   font-weight: 500;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   box-shadow: 10px 10px 1px #ae9d78;
   height: 50px;
   left: 37%;

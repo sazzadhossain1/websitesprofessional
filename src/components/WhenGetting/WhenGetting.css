@@ -1,0 +1,19 @@
+.whenGetting_parent_div {
+  background-color: #fbf8f5;
+  padding: 20px;
+}
+.whenGetting_photo {
+  margin: auto;
+  width: 32%;
+  border-radius: 10px;
+  margin-top: 33px;
+  margin-bottom: 30px;
+}
+.whenGetting_text_div {
+  text-align: left;
+  width: 70%;
+  margin: auto;
+}
+.whenGetting_text_div p {
+  margin-bottom: 50px;
+}
