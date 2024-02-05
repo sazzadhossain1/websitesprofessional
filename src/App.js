@@ -15,6 +15,7 @@ import WhenGetting from "./components/WhenGetting/WhenGetting";
 import TermsOfService from "./components/TermsOfService/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 import AccessDenied from "./components/AccessDenied/AccessDenied";
+import FooterService from "./components/FooterService/FooterService";
 
 function App() {
   const router = createBrowserRouter([
@@ -81,6 +82,10 @@ function App() {
         {
           path: "/accessDenied",
           element: <AccessDenied></AccessDenied>,
+        },
+        {
+          path: "/footerService",
+          element: <FooterService></FooterService>,
         },
       ],
     },

@@ -26,7 +26,9 @@ const Footer = () => {
             Packages
           </Link>
           <br />
-          <Link className="footer_link">Services</Link>
+          <Link to="/footerService" className="footer_link">
+            Services
+          </Link>
           <br />
           <Link to="/projects" className="footer_link">
             Projects
