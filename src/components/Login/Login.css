@@ -4,7 +4,6 @@
   margin-bottom: -47px;
 }
 .login_cart_div {
-  background-color: white;
   width: 40%;
   margin: auto;
   padding: 50px;
@@ -14,6 +13,7 @@
   border-radius: 10px;
 }
 .login_inner_div {
+  background-color: white;
   box-shadow: 1px 1px 20px 1px rgb(228, 228, 228);
   width: 70%;
   margin: auto;
@@ -65,4 +65,56 @@
 .sign_up:hover {
   color: #6e695f;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .login_cart_div {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .login_cart_div {
+    width: 70%;
+  }
+
+  .login_inner_div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .login_cart_div {
+    width: 80%;
+  }
+
+  .login_inner_div {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .login_cart_div {
+    width: 90%;
+  }
+
+  .login_inner_div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .login_cart_div {
+    width: 100%;
+  }
+
+  .login_inner_div {
+    width: 100%;
+  }
+
+  .login_input {
+    padding: 2px 20px;
+  }
+  .login_btn {
+    padding: 0px;
+    font-size: 14px;
+
+    height: 40px;
+  }
 }

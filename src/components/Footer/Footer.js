@@ -58,7 +58,11 @@ const Footer = () => {
             >
               <FontAwesomeIcon className="footer_icon" icon={faFacebook} />
             </Link>
-            <FontAwesomeIcon className="footer_icon" icon={faInstagram} />
+
+            <Link to="/accessDenied">
+              <FontAwesomeIcon className="footer_icon" icon={faInstagram} />
+            </Link>
+
             <Link target="_blank" to="https://github.com/Cristiane11">
               <FontAwesomeIcon className="footer_icon" icon={faGithub} />
             </Link>
