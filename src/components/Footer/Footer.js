@@ -22,7 +22,9 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer_Packages_div">
-          <Link className="footer_link">Packages</Link>
+          <Link to="/accessDenied" className="footer_link">
+            Packages
+          </Link>
           <br />
           <Link className="footer_link">Services</Link>
           <br />

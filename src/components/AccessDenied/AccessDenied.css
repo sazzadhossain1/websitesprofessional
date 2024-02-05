@@ -1,0 +1,21 @@
+.access_denied_parent_div {
+  background-color: rgb(248, 254, 255);
+
+  padding: 20px;
+  margin-bottom: -50px;
+}
+.access_denied_heading {
+  font-size: 27px;
+  font-weight: 600;
+  margin-top: 200px;
+}
+
+.go_back_btn {
+  color: white;
+  padding: 7px;
+  border-radius: 7px;
+  margin-top: 30px;
+  margin-bottom: 200px;
+  width: 200px;
+  margin-left: -250px;
+}

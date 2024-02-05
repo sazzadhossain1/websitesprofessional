@@ -14,6 +14,7 @@ import Seo from "./components/Seo/Seo";
 import WhenGetting from "./components/WhenGetting/WhenGetting";
 import TermsOfService from "./components/TermsOfService/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
+import AccessDenied from "./components/AccessDenied/AccessDenied";
 
 function App() {
   const router = createBrowserRouter([
@@ -76,6 +77,10 @@ function App() {
         {
           path: "/privacyPolicy",
           element: <PrivacyPolicy></PrivacyPolicy>,
+        },
+        {
+          path: "/accessDenied",
+          element: <AccessDenied></AccessDenied>,
         },
       ],
     },
