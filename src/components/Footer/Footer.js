@@ -76,7 +76,9 @@ const Footer = () => {
           <Link to="/termsOfService" className="terms_text">
             Terms of Service
           </Link>
-          <Link className="privacy_text">Privacy Policy</Link>
+          <Link to="/privacyPolicy" className="privacy_text">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </div>
