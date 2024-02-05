@@ -3,6 +3,8 @@ import "./AboutMe.css";
 import CristianeAbreu from "../../accts/CristianeAbreu/CristianeAbreu.jpg";
 
 const AboutMe = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   return (
     <div>
       <h1 className="about_me_heading">About Me</h1>

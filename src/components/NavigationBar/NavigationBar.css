@@ -52,6 +52,9 @@ small {
 /* ===================== */
 .nav_menu_main_parent_div {
   background-color: white;
+  /* position: fixed;
+  top: 0;
+  z-index: 1; */
 }
 .nav_menu_parent_div {
   display: flex;

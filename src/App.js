@@ -12,6 +12,7 @@ import Contact from "./components/Contact/Contact";
 import OnlineMarketing from "./components/OnlineMarketing/OnlineMarketing";
 import Seo from "./components/Seo/Seo";
 import WhenGetting from "./components/WhenGetting/WhenGetting";
+import TermsOfService from "./components/TermsOfService/TermsOfService";
 
 function App() {
   const router = createBrowserRouter([
@@ -66,6 +67,10 @@ function App() {
         {
           path: "/whenGetting",
           element: <WhenGetting></WhenGetting>,
+        },
+        {
+          path: "/termsOfService",
+          element: <TermsOfService></TermsOfService>,
         },
       ],
     },

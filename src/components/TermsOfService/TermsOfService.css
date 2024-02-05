@@ -1,0 +1,41 @@
+.terms_of_service_grid_div {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: auto;
+  margin-top: 50px;
+}
+.termsOfService_first_div {
+  text-align: left;
+}
+
+.termsOfService_heading {
+  font-size: 35px;
+  font-weight: 500;
+}
+.effective {
+  color: rgb(141, 141, 141);
+}
+.termsOfService_second_div {
+  text-align: left;
+  color: rgb(141, 141, 141);
+  width: 65%;
+}
+
+@media screen and (max-width: 1250px) {
+  .terms_of_service_grid_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .termsOfService_first_div {
+    margin-bottom: 50px;
+  }
+  .termsOfService_second_div {
+    text-align: left;
+    color: rgb(141, 141, 141);
+    width: 90%;
+  }
+}

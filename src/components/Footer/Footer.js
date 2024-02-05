@@ -73,7 +73,9 @@ const Footer = () => {
           Copyright © 2023 Website Professional ™ . All Rights Reserved.
         </div>
         <div className="terms_of_service_div">
-          <Link className="terms_text">Terms of Service</Link>
+          <Link to="/termsOfService" className="terms_text">
+            Terms of Service
+          </Link>
           <Link className="privacy_text">Privacy Policy</Link>
         </div>
       </div>
