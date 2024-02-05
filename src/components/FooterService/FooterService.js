@@ -5,6 +5,8 @@ import footerSeoPhoto from "../../accts/footerServicePhoto/footerSeoPhoto.png";
 import footerOnlineManagementPhoto from "../../accts/footerServicePhoto/footerOnlineManagement.png";
 
 const FooterService = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   return (
     <div>
       <h1 className="footer_service_heading">Services</h1>
