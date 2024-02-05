@@ -2,6 +2,8 @@ import React from "react";
 import "./TermsOfService.css";
 
 const TermsOfService = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   return (
     <div className="terms_of_service_grid_div">
       <div className="termsOfService_first_div">

@@ -5,6 +5,8 @@ import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const PrivacyPolicy = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   return (
     <div className="PrivacyPolicy_flex_div">
       <div>
