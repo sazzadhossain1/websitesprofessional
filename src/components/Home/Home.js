@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      {/* <HeroSection></HeroSection> */}
+      <HeroSection></HeroSection>
       {/* <Services></Services> */}
       {/* <div className="projects_home_parent_div">
         <Projects></Projects>

@@ -78,6 +78,7 @@ small {
   align-items: center;
   gap: 40px;
   /* margin-right: -50px; */
+  /* background-color: red; */
 }
 
 .unOrderLink li {
@@ -99,6 +100,11 @@ small {
     width: 90%;
   }
 }
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+  .navigationLogo {
+    width: 300px;
+  }
+}
 @media screen and (max-width: 950px) {
   .navigation_second_parent_div {
   }
@@ -110,12 +116,18 @@ small {
   }
 }
 @media screen and (max-width: 871px) {
+  .navigationLogo {
+    width: 200px;
+  }
   .navigation_second_parent_div {
     width: 100%;
   }
   .nav_menu_parent_div {
     width: 90%;
     padding: 10px;
+  }
+  .unOrderLink {
+    gap: 30px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -165,9 +177,33 @@ small {
     top: 48px;
   }
 }
+@media screen and (max-width: 800px) and (max-height: 1280px) {
+  .navigationLogo {
+    width: 380px;
+  }
+  .fa_bars {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 800px) and (max-height: 707px) {
+  .navigationLogo {
+    width: 250px;
+  }
+  .fa_bars {
+    font-size: 25px;
+  }
+}
 @media screen and (max-width: 747px) {
   .unOrderLink {
     top: 47px;
+  }
+}
+@media screen and (max-width: 712px) and (max-height: 1138px) {
+  .navigationLogo {
+    width: 370px;
+  }
+  .fa_bars {
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 709px) {
@@ -178,9 +214,52 @@ small {
     top: 47px;
   }
 }
-@media screen and (max-width: 709px) {
-  .unOrderLink {
-    top: 45px;
+@media screen and (max-width: 640px) and (max-height: 360px) {
+  .navigationLogo {
+    width: 250px;
+  }
+  .fa_bars {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 600px) and (max-height: 1024px) {
+  .navigationLogo {
+    width: 350px;
+  }
+  .fa_bars {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 412px) and (max-height: 823px) {
+  .navigationLogo {
+    width: 220px;
+  }
+  .fa_bars {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 384px) and (max-height: 640px) {
+  .navigationLogo {
+    width: 200px;
+  }
+  .fa_bars {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 360px) and (max-height: 740px) {
+  .navigationLogo {
+    width: 200px;
+  }
+  .fa_bars {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 360px) and (max-height: 640px) {
+  .navigationLogo {
+    width: 200px;
+  }
+  .fa_bars {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 350px) {

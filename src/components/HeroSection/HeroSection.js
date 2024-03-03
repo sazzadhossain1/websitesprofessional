@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <div className="heroSection_parent_div">
-      <img className="heroPhoto" src={heroPhoto} alt="" />
+      {/* <img className="heroPhoto" src={heroPhoto} alt="" /> */}
       <div className="attract_div">
         <h1 className="attract_h1">
           Attract new customer and <br /> Increase Your Chances of Success.
