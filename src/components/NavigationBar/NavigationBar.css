@@ -3,6 +3,7 @@
 .navigation_second_parent_div {
   background-color: rgb(243, 244, 246);
   padding: 7px;
+  width: 100%;
 }
 .navigation_parent_div {
   display: flex;
@@ -51,7 +52,7 @@ small {
 
 /* ===================== */
 .nav_menu_main_parent_div {
-  background-color: white;
+  /* background-color: red; */
   /* position: fixed;
   top: 0;
   z-index: 1; */
@@ -62,7 +63,7 @@ small {
   justify-content: space-between;
   width: 70%;
   margin: auto;
-  /* background-color: red; */
+  /* background-color: blue; */
 }
 .menu_icons {
   display: none;
@@ -76,7 +77,7 @@ small {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-right: -50px;
+  /* margin-right: -50px; */
 }
 
 .unOrderLink li {

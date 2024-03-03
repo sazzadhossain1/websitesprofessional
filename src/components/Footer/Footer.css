@@ -1,5 +1,11 @@
 .footer_parent_div {
-  background-color: #212529;
+  /* background-color: #212529; */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    4deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(55, 55, 55, 1) 100%
+  );
   color: #ffbf3f;
   font-size: 15px;
   margin-top: 50px;

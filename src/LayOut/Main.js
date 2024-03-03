@@ -7,8 +7,8 @@ const Main = () => {
   return (
     <div>
       <NavigationBar></NavigationBar>
-      <Outlet></Outlet>
-      <Footer></Footer>
+      {/* <Outlet></Outlet> */}
+      {/* <Footer></Footer> */}
     </div>
   );
 };

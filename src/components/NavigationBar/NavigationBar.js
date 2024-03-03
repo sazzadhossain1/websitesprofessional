@@ -19,6 +19,7 @@ const NavigationBar = () => {
   return (
     <div className="navigation_main_parent_div">
       {/* Navigaton Login Part Site */}
+
       <div className="navigation_second_parent_div">
         <div className="navigation_parent_div">
           <div className="navigation_email_div">
