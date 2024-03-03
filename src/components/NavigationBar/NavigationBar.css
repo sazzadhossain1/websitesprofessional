@@ -171,6 +171,9 @@ small {
   }
 }
 @media screen and (max-width: 709px) {
+  .navigationLogo {
+    width: 250px;
+  }
   .unOrderLink {
     top: 47px;
   }
@@ -178,5 +181,20 @@ small {
 @media screen and (max-width: 709px) {
   .unOrderLink {
     top: 45px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .navigationLogo {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 270px) {
+  .navigationLogo {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 250px) {
+  .navigationLogo {
+    width: 150px;
   }
 }
