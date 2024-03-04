@@ -6,7 +6,7 @@ const AboutMe = () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   return (
-    <div>
+    <div className="about_me_parent_div">
       <h1 className="about_me_heading">About Me</h1>
       <p className="hi_i_am">Hi, I am Cristiane Abreu.</p>
       <div className="about_me_grid_div">

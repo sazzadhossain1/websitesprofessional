@@ -19,7 +19,7 @@ const Home = () => {
         </Link>
       </div>
 
-      {/* <AboutMe></AboutMe> */}
+      <AboutMe></AboutMe>
 
       {/* <div className="blogPost_home_parent_div">
         <BlogPost></BlogPost>
