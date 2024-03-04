@@ -57,6 +57,7 @@
   background-blend-mode: darken;
   height: 61vh;
   width: 100%;
+  margin-top: 90px;
 }
 .attract_div {
   position: relative;
@@ -118,9 +119,24 @@
     height: 35vh;
   }
 }
+@media screen and (max-width: 1024px) and (max-height: 707px) {
+  .heroSection_parent_div {
+    height: 50vh;
+  }
+}
 @media screen and (max-width: 1024px) and (max-height: 600px) {
   .heroSection_parent_div {
     height: 55vh;
+  }
+}
+@media screen and (max-width: 912px) and (max-height: 1368px) {
+  .heroSection_parent_div {
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 912px) and (max-height: 707px) {
+  .heroSection_parent_div {
+    height: 50vh;
   }
 }
 
@@ -129,9 +145,15 @@
     height: 50vh;
   }
 }
+@media screen and (max-width: 850px) and (max-height: 707px) {
+  .heroSection_parent_div {
+    margin-top: 50px;
+  }
+}
 @media screen and (max-width: 800px) and (max-height: 1280px) {
   .heroSection_parent_div {
     height: 40vh;
+    margin-top: 50px;
   }
   .attract_h1 {
     font-size: 40px;
@@ -162,6 +184,11 @@
     font-weight: 500;
   }
 }
+@media screen and (max-width: 712px) and (max-height: 1138px) {
+  .heroSection_parent_div {
+    margin-top: 50px;
+  }
+}
 
 @media screen and (max-width: 640px) {
   .heroPhoto {
@@ -186,6 +213,11 @@
 @media screen and (max-width: 640px) and (max-height: 360px) {
   .heroSection_parent_div {
     height: 82vh;
+  }
+}
+@media screen and (max-width: 600px) and (max-height: 1024px) {
+  .heroSection_parent_div {
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 540px) and (max-height: 720px) {

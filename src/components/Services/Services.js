@@ -6,7 +6,7 @@ const Services = () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   return (
-    <div>
+    <div className="service_main_parent_div">
       <h1 className="Services">Services</h1>
 
       <div className="service_grid_div">
@@ -15,7 +15,9 @@ const Services = () => {
             <h2 className="services_cart_heading">
               Search Engine Optimization (SEO)
             </h2>
-            <p className="service_price">Starts at $1000</p>
+            <p className="service_price">
+              Starts at <span className="price">$1000</span>
+            </p>
           </div>
           <div className="services_body_text_div">
             <p>
@@ -33,7 +35,9 @@ const Services = () => {
             <h2 className="services_cart_heading">
               Online Marketing Management
             </h2>
-            <p className="service_price">Starts at $350</p>
+            <p className="service_price">
+              Starts at <span className="price">$350</span>
+            </p>
           </div>
 
           <div className="services_body_text_div">
@@ -51,7 +55,9 @@ const Services = () => {
             <h2 className="services_cart_heading">
               Website Development, Creation, and Management
             </h2>
-            <p className="service_price">Starts at $300</p>
+            <p className="service_price">
+              Starts at <span className="price">$300</span>
+            </p>
           </div>
 
           <div className="services_body_text_div">

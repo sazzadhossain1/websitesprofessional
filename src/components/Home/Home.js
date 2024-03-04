@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <HeroSection></HeroSection>
-      {/* <Services></Services> */}
+      <Services></Services>
       {/* <div className="projects_home_parent_div">
         <Projects></Projects>
         <Link to="/projects">
