@@ -15,12 +15,13 @@ const Footer = () => {
     <div className="footer_parent_div">
       <div className="footer_grid_div">
         <div className="footer_unlock_div">
-          <img src={footerLogo} alt="" />
+          <img className="footer_logo" src={footerLogo} alt="" />
           <p className="footer_Unlock">
             Unlock Your Online Potential with Websites and Powerful Marketing
             Solutions
           </p>
         </div>
+
         <div className="footer_Packages_div">
           <Link to="/accessDenied" className="footer_link">
             Packages
@@ -47,6 +48,7 @@ const Footer = () => {
             Contacts
           </Link>
         </div>
+
         <div className="footer-contact_div">
           <p className="footer_contact_header">Contacts</p>
           <p className="footer_info_email">info@websitesprofessional.com</p>

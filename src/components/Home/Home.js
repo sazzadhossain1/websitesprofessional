@@ -11,15 +11,15 @@ const Home = () => {
   return (
     <div>
       <HeroSection></HeroSection>
-      <Services></Services>
-      <div className="projects_home_parent_div">
+      {/* <Services></Services> */}
+      {/* <div className="projects_home_parent_div">
         <Projects></Projects>
         <Link to="/projects">
           <button className="blogPost_view_all_btn">View All</button>
         </Link>
-      </div>
+      </div> */}
 
-      <AboutMe></AboutMe>
+      {/* <AboutMe></AboutMe> */}
 
       {/* <div className="blogPost_home_parent_div">
         <BlogPost></BlogPost>
