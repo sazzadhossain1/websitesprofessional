@@ -19,14 +19,14 @@ const Home = () => {
         </Link>
       </div>
 
-      {/* <AboutMe></AboutMe> */}
+      <AboutMe></AboutMe>
 
-      {/* <div className="blogPost_home_parent_div">
+      <div className="blogPost_home_parent_div">
         <BlogPost></BlogPost>
         <Link to="/blogPosts">
           <button className="blogPost_view_all_btn">View All</button>
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 };
