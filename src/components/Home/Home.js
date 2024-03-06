@@ -6,6 +6,7 @@ import Projects from "../Projects/Projects";
 import AboutMe from "../AboutMe/AboutMe";
 import BlogPost from "../BlogPost/BlogPost";
 import { Link } from "react-router-dom";
+import HomeSignUp from "../HomeSignUp/HomeSignUp";
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
       </div>
 
       <AboutMe></AboutMe>
-
+      <HomeSignUp></HomeSignUp>
       <div className="blogPost_home_parent_div">
         <BlogPost></BlogPost>
         <Link to="/blogPosts">

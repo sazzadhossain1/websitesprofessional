@@ -8,6 +8,7 @@
   ); */
   color: #ffbf3f;
   font-size: 15px;
+  margin-top: 50px;
 }
 .footer_grid_div {
   display: grid;
@@ -117,23 +118,23 @@
     margin-bottom: 30px;
   }
 }
-
+@media screen and (max-width: 550px) {
+  .footer_logo {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 400px) {
+  .footer_logo {
+    width: 85%;
+  }
+  .footer_grid_div {
+    text-align: left;
+  }
   .terms_of_service_div {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .terms_text {
-    margin: auto;
-  }
-  .privacy_text {
-    margin: auto;
-  }
   .footer_flex_div {
-    display: grid;
-    grid-template-columns: 1fr;
     text-align: left;
-
-    width: 100%;
   }
 }

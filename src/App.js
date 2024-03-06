@@ -16,6 +16,8 @@ import TermsOfService from "./components/TermsOfService/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 import AccessDenied from "./components/AccessDenied/AccessDenied";
 import FooterService from "./components/FooterService/FooterService";
+import HomeSignUp from "./components/HomeSignUp/HomeSignUp";
+import Review from "./components/Review/Review";
 
 function App() {
   const router = createBrowserRouter([
@@ -40,6 +42,10 @@ function App() {
           element: <SignUp></SignUp>,
         },
         {
+          path: "/homeSignUp",
+          element: <HomeSignUp></HomeSignUp>,
+        },
+        {
           path: "/services",
           element: <Services></Services>,
         },
@@ -50,6 +56,10 @@ function App() {
         {
           path: "/aboutMe",
           element: <AboutMe></AboutMe>,
+        },
+        {
+          path: "/review",
+          element: <Review></Review>,
         },
         {
           path: "/blogPosts",
