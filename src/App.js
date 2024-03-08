@@ -59,6 +59,9 @@ function App() {
         },
         {
           path: "/review",
+          // loader: async () => {
+          //   return fetch("reviewApi.json");
+          // },
           element: <Review></Review>,
         },
         {

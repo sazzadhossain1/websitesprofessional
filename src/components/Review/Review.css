@@ -1,0 +1,10 @@
+.review_parent_div {
+  background: url("../../accts/reviewPhoto/reviewBackgroundPhoto.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  background-blend-mode: darken;
+  margin-top: 50px;
+}

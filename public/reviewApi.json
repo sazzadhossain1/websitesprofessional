@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "Standard Room",
+    "img": "../src/accts/reviewPhoto/reviewPhotoOne.webp",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto voluptatibus facilis quo aliquid perspiciatis. Laudantium at dolores labore accusantium?"
+  },
+  {
+    "id": 2,
+
+    "name": "Standard Room",
+    "img": "../src/accts/reviewPhoto/reviewPhotoTwo.png",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto voluptatibus facilis quo aliquid perspiciatis. Laudantium at dolores labore accusantium?"
+  },
+  {
+    "id": 3,
+
+    "name": "Standard Room",
+    "img": "../src/accts/reviewPhoto/reviewPhotoThree.jpeg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto voluptatibus facilis quo aliquid perspiciatis. Laudantium at dolores labore accusantium?"
+  },
+  {
+    "id": 4,
+
+    "name": "Standard Room",
+    "img": "../src/accts/reviewPhoto/reviewPhotoFour.jpeg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto voluptatibus facilis quo aliquid perspiciatis. Laudantium at dolores labore accusantium?"
+  },
+  {
+    "id": 5,
+
+    "name": "Standard Room",
+    "img": "../src/accts/reviewPhoto/reviewPhotoFive.jpeg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto voluptatibus facilis quo aliquid perspiciatis. Laudantium at dolores labore accusantium?"
+  }
+]
