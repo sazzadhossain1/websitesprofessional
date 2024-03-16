@@ -80,7 +80,7 @@ const Footer = () => {
       <div className="footer_blank_div"></div>
       <div className="footer_flex_div">
         <div className="copyright_div">
-          Copyright © 2023 Website Professional ™ . All Rights Reserved.
+          Copyright © 2024 Website Professional ™ . All Rights Reserved.
         </div>
         <div className="terms_of_service_div">
           <Link to="/termsOfService" className="terms_text">

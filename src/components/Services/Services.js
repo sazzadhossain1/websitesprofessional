@@ -82,8 +82,8 @@ const Services = () => {
 
           <div className="services_body_text_div">
             <p>
-              For custom package, please contact us and we will be happy to
-              assist you
+              For custom package, please contact us and we will be happy <br />{" "}
+              to assist you
             </p>
           </div>
           <Link>
@@ -102,8 +102,8 @@ const Services = () => {
 
         <div className="services_body_text_div">
           <p>
-            For custom package, please contact us and we will be happy to assist
-            you
+            For custom package, please contact us and we will be happy <br /> to
+            assist you
           </p>
         </div>
         <Link>

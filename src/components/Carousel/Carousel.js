@@ -32,7 +32,7 @@ const Carousel = ({ items }) => {
     >
       <div className="carousel_flex_div">
         <div className="carousel_Photo_div">
-          <img className="carousel_PhotoThree" src={currentItem.img} alt="" />
+          <img className="carousel_Photo" src={currentItem.img} alt="" />
           <div className="carousel_name_div">
             <FontAwesomeIcon
               onClick={() => {
