@@ -235,6 +235,7 @@
     margin-top: 20px;
   }
 }
+
 @media screen and (max-width: 820px) and (max-height: 707px) {
   .heroSection_parent_div {
     margin-top: 0;

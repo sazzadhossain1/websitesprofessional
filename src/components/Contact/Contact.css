@@ -68,6 +68,15 @@
   display: flex;
   justify-content: center;
 }
+.booking_btn {
+  width: 130px;
+  background-color: #f6bb17;
+  padding: 10px;
+  font-weight: 500;
+
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 1px #ae9d78;
+}
 .submit_btn {
   width: 130px;
   background-color: #f6bb17;
@@ -96,4 +105,12 @@
   .contact_input_div {
     margin-top: -130px;
   }
+  /* .booking_btn_div {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+  }
+  .submit_div {
+    justify-content: left;
+  } */
 }

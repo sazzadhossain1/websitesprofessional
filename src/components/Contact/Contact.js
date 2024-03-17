@@ -27,12 +27,14 @@ const Contact = () => {
           <FontAwesomeIcon className="contact_icon" icon={faEnvelope} />
           <p>info@websitesprofessional.com</p>
         </div>
-        <Link
-          to="https://calendly.com/cristiane-abreu/seo-project-meeting?month=2024-03"
-          target="_blank"
-        >
-          <button className="submit_btn">Booking</button>
-        </Link>
+        <div className="booking_btn_div">
+          <Link
+            to="https://calendly.com/cristiane-abreu/seo-project-meeting?month=2024-03"
+            target="_blank"
+          >
+            <button className="booking_btn">Booking</button>
+          </Link>
+        </div>
       </div>
       <div className="contact_input_div">
         <p>
