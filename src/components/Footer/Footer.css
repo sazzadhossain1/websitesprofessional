@@ -14,7 +14,7 @@
   text-align: left;
   /* background-color: rgb(46, 6, 6); */
 }
-.footer_Unlock {
+.footer_Digital {
   margin-top: 20px;
 }
 
@@ -29,7 +29,7 @@
 }
 .footer_link {
   margin-top: 50px;
-  line-height: 40px;
+  line-height: 32px;
 }
 
 .footer_contact_header {
@@ -37,11 +37,14 @@
   margin-bottom: 20px;
 }
 .footer_info_email {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .footer_number {
   margin-bottom: 20px;
+}
+.facebook_icon {
+  margin-right: 12px;
 }
 .footer_icon {
   margin-right: 12px;
@@ -92,7 +95,7 @@
   .footer_logo {
     width: 50%;
   }
-  .footer_unlock_div {
+  .footer_Digital_div {
     border-bottom: 2px solid #444;
   }
   .footer_Packages_div {

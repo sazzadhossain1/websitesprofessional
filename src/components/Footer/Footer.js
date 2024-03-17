@@ -14,14 +14,15 @@ const Footer = () => {
   return (
     <div className="footer_parent_div">
       <div className="footer_grid_div">
-        <div className="footer_unlock_div">
+        <div className="footer_Digital_div">
           <img className="footer_logo" src={footerLogo} alt="" />
-          <p className="footer_Unlock">Digital Marketing Consultant</p>
+          <p className="footer_Digital">Digital Marketing Consultant</p>
           <p className="footer_info_email">info@websitesprofessional.com</p>
           <p className="footer_number">704-891-4329</p>
         </div>
 
         <div className="footer_Packages_div">
+          <p className="footer_contact_header"> Site Map</p>
           <Link to="/accessDenied" className="footer_link">
             Packages
           </Link>
@@ -62,6 +63,7 @@ const Footer = () => {
 
         <div className="footer-contact_div">
           <p className="footer_contact_header">Contacts</p>
+
           {/* <p className="footer_info_email">info@websitesprofessional.com</p>
           <p className="footer_number">704-891-4329</p> */}
           <div className="footer_icon_div">
@@ -69,7 +71,7 @@ const Footer = () => {
               target="_blank"
               to="https://www.facebook.com/people/Affordable-Website-Online-Marketing/100066757076765/"
             >
-              <FontAwesomeIcon className="footer_icon" icon={faFacebook} />
+              <FontAwesomeIcon className="facebook_icon" icon={faFacebook} />
             </Link>
 
             <Link to="/accessDenied">

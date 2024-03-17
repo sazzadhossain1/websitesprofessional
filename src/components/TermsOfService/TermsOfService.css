@@ -3,7 +3,7 @@
   justify-content: space-between;
   width: 65%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 120px;
 }
 .termsOfService_first_div {
   text-align: left;
@@ -28,7 +28,7 @@
     grid-template-columns: 1fr;
     width: 90%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 120px;
   }
   .termsOfService_first_div {
     margin-bottom: 50px;
