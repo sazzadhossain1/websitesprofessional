@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* <img className="heroPhoto" src={heroPhoto} alt="" /> */}
       <div className="attract_div">
         <h1 className="attract_h1">
-          Attract New Customers and <br /> Grow Your Business
+          Attract New Customers <br /> and Grow Your Business
         </h1>
         {/* <h1 className="unlock_h1">
           Unlock Your Online Potential with <br /> Websites and Powerful

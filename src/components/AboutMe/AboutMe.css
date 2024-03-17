@@ -9,6 +9,9 @@
   font-size: 23px;
   margin-top: 15px;
   margin-bottom: 50px;
+  color: #f6bb17;
+
+  font-family: IvyMode;
 }
 .about_me_grid_div {
   display: flex;

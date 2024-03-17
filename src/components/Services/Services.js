@@ -13,27 +13,8 @@ const Services = () => {
         <div className="service_cart_parent_div">
           <div className="services_cart_header">
             <h2 className="services_cart_heading">
-              Search Engine Optimization (SEO)
-            </h2>
-            <p className="service_price">
-              Starts at <span className="price">$1000</span>
-            </p>
-          </div>
-          <div className="services_body_text_div">
-            <p>
-              SEO Specialist optimizes websites to increase organic search
-              engine rankings and drive traffic, using techniques such as
-              keyword research, content creation, and link building.
-            </p>
-          </div>
-          <Link>
-            <button className="service_subscribe_btn">Subscribe</button>
-          </Link>
-        </div>
-        <div className="service_cart_parent_div">
-          <div className="services_cart_header">
-            <h2 className="services_cart_heading">
-              Online Marketing Management
+              {/* Online Marketing Management */}
+              Online Marketing
             </h2>
             <p className="service_price">
               Starts at <span className="price">$350</span>
@@ -53,7 +34,30 @@ const Services = () => {
         <div className="service_cart_parent_div">
           <div className="services_cart_header">
             <h2 className="services_cart_heading">
-              Website Development, Creation, and Management
+              {/* Search Engine Optimization (SEO) a*/}
+              SEO Marketing
+            </h2>
+            <p className="service_price">
+              Starts at <span className="price">$1000</span>
+            </p>
+          </div>
+          <div className="services_body_text_div">
+            <p>
+              SEO Specialist optimizes websites to increase organic search
+              engine rankings and drive traffic, using techniques such as
+              keyword research, content creation, and link building.
+            </p>
+          </div>
+          <Link>
+            <button className="service_subscribe_btn">Subscribe</button>
+          </Link>
+        </div>
+
+        <div className="service_cart_parent_div">
+          <div className="services_cart_header">
+            <h2 className="services_cart_heading">
+              {/* Website Development, Creation, and Management */}
+              Local marketing
             </h2>
             <p className="service_price">
               Starts at <span className="price">$300</span>
@@ -76,7 +80,10 @@ const Services = () => {
         {/* --------------------------------- */}
         <div className="service_cart_parent_div_first_last">
           <div className="services_cart_header">
-            <h2 className="services_cart_heading">Want a Custom Build</h2>
+            <h2 className="services_cart_heading">
+              {/* Want a Custom Build */}
+              Business Consultant
+            </h2>
             <p className="service_price">Make Your Own Budget Plan</p>
           </div>
 
@@ -96,7 +103,10 @@ const Services = () => {
 
       <div className="service_cart_parent_div_last">
         <div className="services_cart_header">
-          <h2 className="services_cart_heading">Want a Custom Build</h2>
+          <h2 className="services_cart_heading">
+            {/* Want a Custom Build */}
+            Business Consultant
+          </h2>
           <p className="service_price">Make Your Own Budget Plan</p>
         </div>
 

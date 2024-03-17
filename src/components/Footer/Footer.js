@@ -16,10 +16,9 @@ const Footer = () => {
       <div className="footer_grid_div">
         <div className="footer_unlock_div">
           <img className="footer_logo" src={footerLogo} alt="" />
-          <p className="footer_Unlock">
-            Unlock Your Online Potential with Websites and Powerful Marketing
-            Solutions
-          </p>
+          <p className="footer_Unlock">Digital Marketing Consultant</p>
+          <p className="footer_info_email">info@websitesprofessional.com</p>
+          <p className="footer_number">704-891-4329</p>
         </div>
 
         <div className="footer_Packages_div">
@@ -34,8 +33,7 @@ const Footer = () => {
           <Link to="/projects" className="footer_link">
             Projects
           </Link>
-        </div>
-        <div className="footer_aboutMe_div">
+          <br />
           <Link to="/aboutMe" className="footer_link">
             About Me
           </Link>
@@ -48,11 +46,24 @@ const Footer = () => {
             Contacts
           </Link>
         </div>
+        {/* <div className="footer_aboutMe_div">
+          <Link to="/aboutMe" className="footer_link">
+            About Me
+          </Link>
+          <br />
+          <Link to="/blogPosts" className="footer_link">
+            Blog Posts
+          </Link>
+          <br />
+          <Link to="/contact" className="footer_link">
+            Contacts
+          </Link>
+        </div> */}
 
         <div className="footer-contact_div">
           <p className="footer_contact_header">Contacts</p>
-          {/* <p className="footer_info_email">info@websitesprofessional.com</p> */}
-          <p className="footer_number">704-891-4329</p>
+          {/* <p className="footer_info_email">info@websitesprofessional.com</p>
+          <p className="footer_number">704-891-4329</p> */}
           <div className="footer_icon_div">
             <Link
               target="_blank"

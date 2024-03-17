@@ -1,20 +1,30 @@
+.homeSignUp_parent_div {
+  background-color: #f6bb17;
+  padding: 100px 0;
+}
 .login_parent_div {
-  background-color: #fbf8f5;
+  /* background-color: #fbf8f5; */
   padding: 10px;
   margin-bottom: -47px;
 }
+.homeSignUP_In_heading {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+}
 .homeSignUp_cart_div {
-  background-color: white;
+  /* background-color: white; */
+
   width: 40%;
   margin: auto;
   padding: 70px 10px;
   margin-top: 50px;
   margin-bottom: 50px;
-  box-shadow: 1px 1px 20px 1px rgb(228, 228, 228);
+  /* box-shadow: 1px 1px 20px 1px rgb(228, 228, 228); */
   border-radius: 10px;
 }
 .homeSignUp_inner_div {
-  background-color: white;
+  /* background-color: white; */
   box-shadow: 1px 1px 20px 1px rgb(228, 228, 228);
   width: 70%;
   margin: auto;
@@ -68,6 +78,21 @@
   font-weight: 500;
 }
 
+.homeSignUp_btn {
+  width: 80px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.253);
+}
+
+.homeSignUp_btn:hover {
+  border: 2px solid white;
+}
 @media screen and (max-width: 1200px) {
   .homeSignUp_cart_div {
     width: 60%;

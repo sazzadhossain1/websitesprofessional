@@ -23,13 +23,13 @@ const NavigationBar = () => {
       <div className="navigation_second_parent_div">
         <div className="navigation_parent_div">
           <div className="navigation_email_div">
-            {/* <div className="icon_div">
+            <div className="icon_div">
               <FontAwesomeIcon
                 className="nav_envelope_icon"
                 icon={faEnvelope}
               />
               <small>info@websitesprofessional.com</small>
-            </div> */}
+            </div>
 
             <div className="icon_div">
               <FontAwesomeIcon className="nav_phone_icon" icon={faPhoneFlip} />

@@ -5,13 +5,13 @@ const HomeSignUp = () => {
     <div className="homeSignUp_parent_div">
       <div className="homeSignUp_cart_div">
         <div className="homeSignUp_inner_div">
-          <h1 className="sign_In_heading">Sign Up</h1>
+          <h1 className="homeSignUP_In_heading">Sign Up</h1>
           <div>
             <div>
               <input
                 className="homeSignUp_input"
                 type="name"
-                placeholder="User Name"
+                placeholder="Full Name"
               />
             </div>
             <div>
@@ -23,7 +23,7 @@ const HomeSignUp = () => {
             </div>
           </div>
 
-          <button className="login_btn">Submit</button>
+          <button className="homeSignUp_btn">Submit</button>
         </div>
       </div>
     </div>
