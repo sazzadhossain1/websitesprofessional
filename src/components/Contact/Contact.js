@@ -23,10 +23,10 @@ const Contact = () => {
           <FontAwesomeIcon className="contact_icon" icon={faPhone} />
           <p>704-891-4329</p>
         </div>
-        <div className="contact_icon_flex_div">
+        {/* <div className="contact_icon_flex_div">
           <FontAwesomeIcon className="contact_icon" icon={faEnvelope} />
           <p>info@websitesprofessional.com</p>
-        </div>
+        </div> */}
         <Link
           to="https://calendly.com/cristiane-abreu/seo-project-meeting?month=2024-03"
           target="_blank"

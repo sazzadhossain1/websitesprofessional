@@ -51,7 +51,7 @@ const Footer = () => {
 
         <div className="footer-contact_div">
           <p className="footer_contact_header">Contacts</p>
-          <p className="footer_info_email">info@websitesprofessional.com</p>
+          {/* <p className="footer_info_email">info@websitesprofessional.com</p> */}
           <p className="footer_number">704-891-4329</p>
           <div className="footer_icon_div">
             <Link
