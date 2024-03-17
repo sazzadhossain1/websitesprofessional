@@ -1,6 +1,5 @@
 import React from "react";
 import "./HomeSignUp.css";
-import { Link } from "react-router-dom";
 const HomeSignUp = () => {
   return (
     <div className="homeSignUp_parent_div">
@@ -23,6 +22,8 @@ const HomeSignUp = () => {
               />
             </div>
           </div>
+
+          <button className="login_btn">Submit</button>
         </div>
       </div>
     </div>

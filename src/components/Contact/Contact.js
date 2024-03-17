@@ -3,6 +3,7 @@ import "./Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   document.body.scrollTop = 0; // For Safari
@@ -26,6 +27,12 @@ const Contact = () => {
           <FontAwesomeIcon className="contact_icon" icon={faEnvelope} />
           <p>info@websitesprofessional.com</p>
         </div>
+        <Link
+          to="https://calendly.com/cristiane-abreu/seo-project-meeting?month=2024-03"
+          target="_blank"
+        >
+          <button className="submit_btn">Booking</button>
+        </Link>
       </div>
       <div className="contact_input_div">
         <p>
