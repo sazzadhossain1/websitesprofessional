@@ -27,10 +27,16 @@ function App() {
       children: [
         {
           path: "/",
+          loader: async () => {
+            return fetch("https://admin.websitesprofessional.com/api/setting");
+          },
           element: <Home></Home>,
         },
         {
           path: "/home",
+          loader: async () => {
+            return fetch("https://admin.websitesprofessional.com/api/setting");
+          },
           element: <Home></Home>,
         },
         {
@@ -55,6 +61,9 @@ function App() {
         },
         {
           path: "/aboutMe",
+          loader: async () => {
+            return fetch("https://admin.websitesprofessional.com/api/setting");
+          },
           element: <AboutMe></AboutMe>,
         },
         {

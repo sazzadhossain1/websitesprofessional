@@ -1,18 +1,35 @@
 import React from "react";
 import "./AboutMe.css";
 import CristianeAbreu from "../../accts/CristianeAbreu/CristianeAbreu.jpg";
+import { useLoaderData } from "react-router-dom";
 
 const AboutMe = () => {
+  const getAboutData = useLoaderData();
+  console.log(getAboutData.data);
+
+  const stripHtml = (html) => {
+    return html.replace(/<[^>]*>/g, "");
+  };
+
+  const aboutTextPlain = stripHtml(getAboutData.data.about_text);
+
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   return (
     <div className="about_me_parent_div">
-      <h1 className="about_me_heading">About Me</h1>
-      <p className="hi_i_am">Hi, I am Cristiane Abreu.</p>
+      {/* <h1 className="about_me_heading">About Me</h1> */}
+      <h1 className="about_me_heading">{getAboutData.data.about_title}</h1>
+      {/* <p className="hi_i_am">Hi, I am Cristiane Abreu.</p> */}
+      <p className="hi_i_am">{getAboutData.data.about_sub_title}</p>
       <div className="about_me_grid_div">
         <img className="CristianeAbreu" src={CristianeAbreu} alt="" />
+        {/* <img
+          className="CristianeAbreu"
+          src={getAboutData.data.about_image}
+          alt=""
+        /> */}
         <div className="about_me_text_div">
-          <p>
+          {/* <p>
             I am a Web Developer and Web Marketing Analyst. I am passionate in
             regards to my dedication to deliver digital marketing plans with
             innovative strategies that will boost your website’s rank on search
@@ -36,7 +53,8 @@ const AboutMe = () => {
             a professional website that pays for itself. Grow your online
             presence and attract prospective customers today at an affordable
             price.
-          </p>
+          </p> */}
+          <p id="about_me_text_p">{aboutTextPlain}</p>
         </div>
       </div>
     </div>

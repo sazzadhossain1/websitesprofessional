@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div className="contact_grid_div">
       <div className="get_in_touch_div">
-        <h2 className="get_in_touch">Get in touch</h2>
+        <h2 className="get_in_touch">Only by Appointment</h2>
         <div className="contact_icon_flex_div">
           <FontAwesomeIcon className="contact_icon" icon={faLocationDot} />
           <p>
@@ -32,7 +32,7 @@ const Contact = () => {
             to="https://calendly.com/cristiane-abreu/seo-project-meeting?month=2024-03"
             target="_blank"
           >
-            <button className="booking_btn">Booking</button>
+            <button className="booking_btn">Appointment</button>
           </Link>
         </div>
       </div>
