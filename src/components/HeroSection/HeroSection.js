@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection = ({ apiInfo }) => {
   const apiData = apiInfo.data;
-  console.log(apiData);
+  // console.log(apiData);
 
   return (
     <div className="heroSection_parent_div">

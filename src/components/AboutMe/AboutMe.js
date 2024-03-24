@@ -3,24 +3,24 @@ import "./AboutMe.css";
 import CristianeAbreu from "../../accts/CristianeAbreu/CristianeAbreu.jpg";
 import { useLoaderData } from "react-router-dom";
 
-const AboutMe = () => {
-  const getAboutData = useLoaderData();
-  console.log(getAboutData.data);
+const AboutMe = ({ aboutApi }) => {
+  // const getAboutData = useLoaderData();
+  // console.log(aboutApi);
 
   const stripHtml = (html) => {
     return html.replace(/<[^>]*>/g, "");
   };
 
-  const aboutTextPlain = stripHtml(getAboutData.data.about_text);
+  const aboutTextPlain = stripHtml(aboutApi.data.about_text);
 
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   return (
     <div className="about_me_parent_div">
       {/* <h1 className="about_me_heading">About Me</h1> */}
-      <h1 className="about_me_heading">{getAboutData.data.about_title}</h1>
+      <h1 className="about_me_heading">{aboutApi.data.about_title}</h1>
       {/* <p className="hi_i_am">Hi, I am Cristiane Abreu.</p> */}
-      <p className="hi_i_am">{getAboutData.data.about_sub_title}</p>
+      <p className="hi_i_am">{aboutApi.data.about_sub_title}</p>
       <div className="about_me_grid_div">
         <img className="CristianeAbreu" src={CristianeAbreu} alt="" />
         {/* <img

@@ -61,16 +61,12 @@ function App() {
         },
         {
           path: "/aboutMe",
-          loader: async () => {
-            return fetch("https://admin.websitesprofessional.com/api/setting");
-          },
+
           element: <AboutMe></AboutMe>,
         },
         {
           path: "/review",
-          // loader: async () => {
-          //   return fetch("reviewApi.json");
-          // },
+
           element: <Review></Review>,
         },
         {
