@@ -1,4 +1,5 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
 import "./OnlineMarketing.css";
 import onlineMarketing from "../../accts/BlogsPost/onlineMarketing.png";
 import BlogPost from "../BlogPost/BlogPost";
@@ -7,11 +8,33 @@ const OnlineMarketing = () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
+  const singleBlogPostData = useLoaderData();
+  console.log(singleBlogPostData);
+
+  const rootUrl = "https://admin.websitesprofessional.com";
+
   return (
     <div className="onlineMarketing_parent_div">
-      <img className="onlineMarketing_photo" src={onlineMarketing} alt="" />
+      <img
+        className="onlineMarketing_photo"
+        src={rootUrl + singleBlogPostData.data.image}
+        alt=""
+      />
       <div className="onlineMarketing-text_div">
+        {/* <p>{singleBlogPostData.data.details}</p> */}
         <p>
+          {singleBlogPostData.data.details
+            .split("<br />")
+            .map((paragraph, index) => (
+              <React.Fragment key={index}>
+                {paragraph}
+                {index <
+                  singleBlogPostData.data.details.split("<br />").length -
+                    1 && <br />}
+              </React.Fragment>
+            ))}
+        </p>
+        {/* <p>
           Online marketing management is the process of planning, executing, and
           analyzing digital marketing campaigns to achieve business goals. It
           involves a range of strategies and techniques, including search engine
@@ -68,7 +91,7 @@ const OnlineMarketing = () => {
           businesses. By implementing effective online marketing management
           strategies, businesses can achieve long-term success in the digital
           marketplace.
-        </p>
+        </p> */}
       </div>
       <BlogPost></BlogPost>
     </div>

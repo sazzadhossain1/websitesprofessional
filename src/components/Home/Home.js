@@ -8,14 +8,18 @@ import BlogPost from "../BlogPost/BlogPost";
 import { Link, useLoaderData } from "react-router-dom";
 import HomeSignUp from "../HomeSignUp/HomeSignUp";
 import Review from "../Review/Review";
+import Service from "../Service/Service";
 
 const Home = () => {
   const getApi = useLoaderData();
-  // console.log(getApi.data.banner_title);
+  // console.log(getApi);
+
+  const rootUrl = "https://admin.websitesprofessional.com";
   return (
     <div>
       <HeroSection apiInfo={getApi}></HeroSection>
       <Services></Services>
+
       <div className="projects_home_parent_div">
         <Projects></Projects>
         <Link to="/projects">
@@ -23,7 +27,7 @@ const Home = () => {
         </Link>
       </div>
 
-      <AboutMe aboutApi={getApi}></AboutMe>
+      <AboutMe></AboutMe>
       <HomeSignUp></HomeSignUp>
       <Review></Review>
       <div className="blogPost_home_parent_div">

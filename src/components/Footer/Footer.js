@@ -18,7 +18,7 @@ const Footer = () => {
           <img className="footer_logo" src={footerLogo} alt="" />
           <p className="footer_Digital">Digital Marketing Consultant</p>
           <p className="footer_info_email">info@websitesprofessional.com</p>
-          <p className="footer_number">704-891-4329</p>
+          <p className="footer_number">973-883-1223</p>
         </div>
 
         <div className="footer_Packages_div">

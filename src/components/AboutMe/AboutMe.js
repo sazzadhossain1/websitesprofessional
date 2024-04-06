@@ -3,18 +3,29 @@ import "./AboutMe.css";
 import CristianeAbreu from "../../accts/CristianeAbreu/CristianeAbreu.jpg";
 import { useLoaderData } from "react-router-dom";
 
-const AboutMe = ({ aboutApi }) => {
-  // const getAboutData = useLoaderData();
+const AboutMe = () => {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
+
+
+  const aboutApi = useLoaderData();
   // console.log(aboutApi);
 
+  
+
+
+  if (!aboutApi || !aboutApi.data) {
+    return <div>Loading...</div>; 
+  }
   const stripHtml = (html) => {
-    return html.replace(/<[^>]*>/g, "");
+    return html?.replace(/<[^>]*>/g, "");
   };
 
-  const aboutTextPlain = stripHtml(aboutApi.data.about_text);
+ 
 
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  
+
+  const rootUrl = "https://admin.websitesprofessional.com";
   return (
     <div className="about_me_parent_div">
       {/* <h1 className="about_me_heading">About Me</h1> */}
@@ -22,12 +33,8 @@ const AboutMe = ({ aboutApi }) => {
       {/* <p className="hi_i_am">Hi, I am Cristiane Abreu.</p> */}
       <p className="hi_i_am">{aboutApi.data.about_sub_title}</p>
       <div className="about_me_grid_div">
-        <img className="CristianeAbreu" src={CristianeAbreu} alt="" />
-        {/* <img
-          className="CristianeAbreu"
-          src={getAboutData.data.about_image}
-          alt=""
-        /> */}
+        <img className="CristianeAbreu" src={rootUrl + aboutApi.data.about_image} alt="" />
+        
         <div className="about_me_text_div">
           {/* <p>
             I am a Web Developer and Web Marketing Analyst. I am passionate in
@@ -54,7 +61,7 @@ const AboutMe = ({ aboutApi }) => {
             presence and attract prospective customers today at an affordable
             price.
           </p> */}
-          <p id="about_me_text_p">{aboutTextPlain}</p>
+          <p id="about_me_text_p">{stripHtml(aboutApi?.data.about_text)}</p>
         </div>
       </div>
     </div>

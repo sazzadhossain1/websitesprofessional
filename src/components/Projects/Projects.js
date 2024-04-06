@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Projects.css";
 import { Link } from "react-router-dom";
 import projectsPhotoOne from "../../accts/projects_photo/projectsPhotoOne.png";
@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
 
   //  Show modal Start //
   const showModal = (e) => {
@@ -22,12 +22,38 @@ const Projects = () => {
     const modal_div = document.getElementById("modal_div");
     modal_div.setAttribute("hidden", "hidden");
   };
+
+  useEffect(() => {
+    fetch("https://admin.websitesprofessional.com/api/home/project")
+      .then((res) => res.json())
+      .then((data) => setProjects(data))
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+
+  const [projects, setProjects] = useState(null);
+
+  if (!projects || !Array.isArray(projects.data)) {
+    return <div>Loading...</div>;
+  }
+
+  const rootUrl = "https://admin.websitesprofessional.com/"
+  // console.log(projects);
   return (
     <div className="projects_parent_div">
+     
       <h1 className="Projects_heading">Projects</h1>
 
       <div className="projects_photo_grid_div">
-        <Link target="_blank" to="https://www.deonafrierson.com/">
+
+          {
+            projects.data.map(project => <div key={project.id}>
+
+  <Link target="_blank" to={project.url}>
+            <img className="projects_photo" src={rootUrl + project.image} alt="" />
+          </Link>
+            </div>)
+          }
+        {/* <Link target="_blank" to="https://www.deonafrierson.com/">
           <img className="projects_photo" src={projectsPhotoOne} alt="" />
         </Link>
         <Link target="_blank" to="https://www.procureagency.com/">
@@ -35,11 +61,11 @@ const Projects = () => {
         </Link>
         <Link onClick={showModal}>
           <img className="projects_photo" src={projectsPhotoThree} alt="" />
-        </Link>
+        </Link> */}
       </div>
 
       {/* Modal start */}
-      <div id="modal_div" className="projects_modal_div" hidden>
+      {/* <div id="modal_div" className="projects_modal_div" hidden>
         <div className="projects_modal_photo_div">
           <button onClick={closeModalFunction}>
             <FontAwesomeIcon className="projects_x_mark" icon={faXmark} />
@@ -50,7 +76,7 @@ const Projects = () => {
             alt=""
           />
         </div>
-      </div>
+      </div> */}
 
       {/* Modal end */}
     </div>

@@ -7,24 +7,29 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Carousel = ({ items }) => {
-  // const { description, img, name } = item;
-  // console.log(items);
+  // const { description, image, name } = items;
+  console.log(items.data);
 
   const [activeIndex, setActiveIndex] = useState(0);
-
+  // console.log(activeIndex)
   //   const convertItemToArray = Object.keys(item);
   //   console.log(convertItemToArray);
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
-      newIndex = items.length - 1;
-    } else if (newIndex >= items.length) {
+      newIndex = items.data.length - 1;
+    } else if (newIndex >= items.data.length) {
       newIndex = 0;
     }
     setActiveIndex(newIndex);
   };
 
-  const currentItem = items[activeIndex];
+  const currentItem = items.data[activeIndex];
+  const rootUrl = "https://admin.websitesprofessional.com";
+
+  const stripPTags = (htmlString) => {
+    return htmlString.replace(/<\/?p>/g, "");
+  };
   return (
     <div
       className="carousel_item"
@@ -32,7 +37,11 @@ const Carousel = ({ items }) => {
     >
       <div className="carousel_flex_div">
         <div className="carousel_Photo_div">
-          <img className="carousel_Photo" src={currentItem.img} alt="" />
+          <img
+            className="carousel_Photo"
+            src={rootUrl + currentItem.image}
+            alt=""
+          />
           <div className="carousel_name_div">
             <FontAwesomeIcon
               onClick={() => {
@@ -43,7 +52,7 @@ const Carousel = ({ items }) => {
             />
             <div>
               <p>{currentItem.name}</p>
-              <p>UPWORK, New York</p>
+              <p>{currentItem.address}</p>
             </div>
             <FontAwesomeIcon
               onClick={() => {
@@ -54,7 +63,7 @@ const Carousel = ({ items }) => {
             />
           </div>
         </div>
-        <p className="carousel_text_p">{currentItem.description}</p>
+        <p className="carousel_text_p">{stripPTags(currentItem.details)}</p>
       </div>
     </div>
   );

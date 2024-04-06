@@ -18,6 +18,8 @@ import AccessDenied from "./components/AccessDenied/AccessDenied";
 import FooterService from "./components/FooterService/FooterService";
 import HomeSignUp from "./components/HomeSignUp/HomeSignUp";
 import Review from "./components/Review/Review";
+import Service from "./components/Service/Service";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   const router = createBrowserRouter([
@@ -56,12 +58,29 @@ function App() {
           element: <Services></Services>,
         },
         {
+          path: "/service/:serviceId",
+
+          loader: async ({ params }) => {
+            return fetch(
+              `https://admin.websitesprofessional.com/api/service/${params.serviceId}`
+            );
+          },
+          element: <Service></Service>,
+        },
+
+        {
           path: "/projects",
           element: <Projects></Projects>,
         },
         {
           path: "/aboutMe",
-
+          loader: async () => {
+            const response = await fetch(
+              "https://admin.websitesprofessional.com/api/setting"
+            );
+            const data = await response.json();
+            return data;
+          },
           element: <AboutMe></AboutMe>,
         },
         {
@@ -74,12 +93,23 @@ function App() {
           element: <BlogPost></BlogPost>,
         },
         {
-          path: "/contact",
-          element: <Contact></Contact>,
+          path: "/blog/:blogId",
+
+          element: <Blog></Blog>,
         },
         {
-          path: "/onlineMarketing",
+          path: "/blogs/:blogId",
+
+          loader: async ({ params }) => {
+            return fetch(
+              `https://admin.websitesprofessional.com/api/blog/${params.blogId}`
+            );
+          },
           element: <OnlineMarketing></OnlineMarketing>,
+        },
+        {
+          path: "/contact",
+          element: <Contact></Contact>,
         },
         {
           path: "/seo",
