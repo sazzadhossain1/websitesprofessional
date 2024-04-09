@@ -1,3 +1,31 @@
 .single_service_parent_div {
   margin-top: 100px;
 }
+.service_title {
+  font-size: 25px;
+}
+.service_photo {
+  margin: auto;
+  margin-top: 40px;
+}
+.service_text_div {
+  width: 65%;
+  margin: auto;
+  margin-top: 50px;
+}
+.service_text_div p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 700px) {
+  .service_text_div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .service_text_div {
+    width: 100%;
+    padding: 0px 20px;
+  }
+}

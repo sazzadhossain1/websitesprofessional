@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Footer.css";
 import footerLogo from "../../accts/footerLogo/footerLogo.png";
 import { Link } from "react-router-dom";
@@ -11,14 +11,83 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  const [footerDatas, setFooterDatas] = useState(null);
+  // console.log(footerDatas);
+  useEffect(() => {
+    fetch("https://admin.websitesprofessional.com/api/setting")
+      .then((res) => res.json())
+      .then((data) => setFooterDatas(data))
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+
+  const rootUrl = "https://admin.websitesprofessional.com";
+
+  // Function to remove email and phone number using regular expressions
+  const formatAddress = (address) => {
+    if (!address) return "";
+    // Regular expression to find email addresses
+    const emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/;
+    // Regular expression to find phone numbers, adjust the regex according to your specific format if needed
+    const phoneRegex = /\b\d{3}-\d{3}-\d{4}\b/;
+    // Remove email and phone number from the string
+    let formattedAddress = address
+      .replace(emailRegex, "")
+      .replace(phoneRegex, "")
+      .trim();
+    // Assuming there might be extra spaces or commas left after removal
+    formattedAddress = formattedAddress.replace(/,+\s*$/, "").trim();
+    return formattedAddress;
+  };
+
+  // Function to remove "Digital Marketing Consultant" and "704-891-4329"
+  const formatAddressTwo = (address) => {
+    if (!address) return "";
+    // Remove "Digital Marketing Consultant"
+    let formattedAddress = address
+      .replace("Digital Marketing Consultant", "")
+      .trim();
+    // Remove the specific phone number "704-891-4329"
+    formattedAddress = formattedAddress.replace("704-891-4329", "").trim();
+    // Further clean up, if necessary, e.g., removing extra spaces or commas
+    formattedAddress = formattedAddress.replace(/,+\s*$/, "").trim();
+    return formattedAddress;
+  };
+
+  // Function to remove "Digital Marketing Consultant" and "info@websitesprofessional.com"
+  const formatAddressThree = (address) => {
+    if (!address) return "";
+    // Remove "Digital Marketing Consultant"
+    let formattedAddress = address
+      .replace("Digital Marketing Consultant", "")
+      .trim();
+    // Remove the specific phone number "704-891-4329"
+    formattedAddress = formattedAddress
+      .replace("info@websitesprofessional.com", "")
+      .trim();
+    // Further clean up, if necessary, e.g., removing extra spaces or commas
+    formattedAddress = formattedAddress.replace(/,+\s*$/, "").trim();
+    return formattedAddress;
+  };
   return (
     <div className="footer_parent_div">
       <div className="footer_grid_div">
         <div className="footer_Digital_div">
-          <img className="footer_logo" src={footerLogo} alt="" />
-          <p className="footer_Digital">Digital Marketing Consultant</p>
-          <p className="footer_info_email">info@websitesprofessional.com</p>
-          <p className="footer_number">973-883-1223</p>
+          <img
+            className="footer_logo"
+            src={rootUrl + footerDatas?.data?.footer_logo}
+            alt=""
+          />
+          <p className="footer_Digital">
+            {formatAddress(footerDatas?.data?.address)}
+          </p>
+          <p className="footer_info_email">
+            {/* info@websitesprofessional.com */}
+            {formatAddressTwo(footerDatas?.data?.address)}
+          </p>
+          <p className="footer_number">
+            {/* 973-883-1223 */}
+            {formatAddressThree(footerDatas?.data?.address)}
+          </p>
         </div>
 
         <div className="footer_Packages_div">

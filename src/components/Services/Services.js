@@ -47,7 +47,7 @@ const Services = () => {
               </p>
             </div>
             <Link to={`/service/${service.id}`}>
-              <button className="service_subscribe_btn">Subscribe</button>
+              <button className="service_subscribe_btn">Read More</button>
             </Link>
           </div>
         ))}

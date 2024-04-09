@@ -8,7 +8,7 @@ import {
 
 const Carousel = ({ items }) => {
   // const { description, image, name } = items;
-  console.log(items.data);
+  // console.log(items.data);
 
   const [activeIndex, setActiveIndex] = useState(0);
   // console.log(activeIndex)
