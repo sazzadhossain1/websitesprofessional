@@ -7,6 +7,7 @@ const Services = () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox,
 
   useEffect(() => {
+    // fetch("https://admin.websitesprofessional.com/api/home/service")
     fetch("https://admin.websitesprofessional.com/api/home/service")
       .then((res) => res.json())
       .then((data) => setServices(data))
@@ -14,7 +15,7 @@ const Services = () => {
   }, []);
 
   const [services, setServices] = useState(null);
-  // console.log(services)
+  console.log(services);
 
   if (!services || !Array.isArray(services.data)) {
     return <div>Loading...</div>;
@@ -41,8 +42,6 @@ const Services = () => {
 
             <div className="services_body_text_div">
               <p>
-                {/* Online Reputation Management is the process of monitoring and
-              influencing an individual or brand's reputation on the internet. */}
                 <div>{stripHtml(service.details)}</div>
               </p>
             </div>

@@ -13,7 +13,7 @@ import navigationLogo from "../../accts/navigationLogo.png";
 const NavigationBar = () => {
   let [state, setState] = useState({ clicked: false });
   const [navData, setNavData] = useState(null);
-  console.log(navData?.data?.address);
+  // console.log(navData?.data?.address);
 
   const handleClick = () => {
     setState({ clicked: !state.clicked });

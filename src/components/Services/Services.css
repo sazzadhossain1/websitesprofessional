@@ -70,7 +70,23 @@
   border-right: 2px solid white;
   color: white;
 }
+.view_more_service {
+  width: 170px;
+  background-color: #f6bb17;
+  padding: 10px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 1px #ae9d78;
 
+  height: 50px;
+}
+.view_more_service:hover {
+  background-color: #ae9d78;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  color: white;
+}
 .service_cart_parent_div_last {
   border-radius: 10px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), 0 10px 20px rgba(0, 0, 0, 0.2),

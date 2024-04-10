@@ -6,18 +6,25 @@ import "./Service.css";
 
 const Service = () => {
   const serviceData = useLoaderData();
-  console.log(serviceData.data);
+  console.log(serviceData);
 
-  const { title, details } = serviceData.data;
+  const { title, details, image } = serviceData.data;
+
+  const stripHtml = (html) => {
+    return html?.replace(/<[^>]*>/g, "");
+  };
+
+  const rootUrl = "https://admin.websitesprofessional.com";
+
   return (
     <div className="single_service_parent_div">
       <p className="service_title">{title}</p>
 
-      <img className="service_photo" src={photo} alt="" />
+      <img className="service_photo" src={rootUrl + image} alt="" />
 
       <div className="service_text_div">
-        <p>{details}</p>
-        <p>
+        <p>{stripHtml(details)}</p>
+        {/* <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
           eligendi est debitis sapiente dignissimos dolorum, exercitationem,
           eaque aspernatur iste atque dolor adipisci veniam nesciunt ipsa,
@@ -84,7 +91,7 @@ const Service = () => {
           laboriosam, laborum illo magnam nesciunt debitis minus mollitia cumque
           laudantium asperiores fuga officiis beatae deleniti corrupti sunt
           sequi.
-        </p>
+        </p> */}
       </div>
     </div>
   );

@@ -20,6 +20,7 @@ import HomeSignUp from "./components/HomeSignUp/HomeSignUp";
 import Review from "./components/Review/Review";
 import Service from "./components/Service/Service";
 import Blog from "./components/Blog/Blog";
+import ServiceAllMap from "./components/ServiceAllMap/ServiceAllMap";
 
 function App() {
   const router = createBrowserRouter([
@@ -68,6 +69,13 @@ function App() {
           element: <Service></Service>,
         },
 
+        {
+          path: "/serviceAllMap",
+          loader: async () => {
+            return fetch("https://admin.websitesprofessional.com/api/service");
+          },
+          element: <ServiceAllMap></ServiceAllMap>,
+        },
         {
           path: "/projects",
           element: <Projects></Projects>,
