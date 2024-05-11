@@ -21,6 +21,13 @@ import Review from "./components/Review/Review";
 import Service from "./components/Service/Service";
 import Blog from "./components/Blog/Blog";
 import ServiceAllMap from "./components/ServiceAllMap/ServiceAllMap";
+import DigitalMarketing from "./components/DigitalMarketing/DigitalMarketing";
+import SeoExperts from "./components/SeoExperts/SeoExperts";
+import SeoFirm from "./components/SeoFirm/SeoFirm";
+import SeoServices from "./components/SeoServices/SeoServices";
+import SeoServicesAgency from "./components/SeoServicesAgency/SeoServicesAgency";
+import WordPressSeo from "./components/WordPressSeo/WordPressSeo";
+import Policy from "./components/Policy/Policy";
 
 function App() {
   const router = createBrowserRouter([
@@ -79,6 +86,65 @@ function App() {
         {
           path: "/projects",
           element: <Projects></Projects>,
+        },
+        {
+          path: "/digital_marketing",
+          loader: async () => {
+            return fetch(
+              "https://admin.websitesprofessional.com/api/digital_marketing"
+            );
+          },
+          element: <DigitalMarketing></DigitalMarketing>,
+        },
+        {
+          path: "/seo_expart",
+          loader: async () => {
+            return fetch(
+              "https://admin.websitesprofessional.com/api/seo_expart"
+            );
+          },
+          element: <SeoExperts></SeoExperts>,
+        },
+        {
+          path: "/seo_firm",
+          loader: async () => {
+            return fetch("https://admin.websitesprofessional.com/api/seo_firm");
+          },
+          element: <SeoFirm></SeoFirm>,
+        },
+        {
+          path: "/seo_service",
+          loader: async () => {
+            return fetch(
+              "https://admin.websitesprofessional.com/api/seo_service"
+            );
+          },
+          element: <SeoServices></SeoServices>,
+        },
+        {
+          path: "/seo_service_agency",
+          loader: async () => {
+            return fetch(
+              "https://admin.websitesprofessional.com/api/seo_service_agency"
+            );
+          },
+          element: <SeoServicesAgency></SeoServicesAgency>,
+        },
+        {
+          path: "/wordpress_seo",
+          loader: async () => {
+            return fetch(
+              "https://admin.websitesprofessional.com/api/wordpress_seo"
+            );
+          },
+          element: <WordPressSeo></WordPressSeo>,
+        },
+        {
+          path: "/policy",
+          loader: async () => {
+            return fetch("https://admin.websitesprofessional.com/api/policy");
+          },
+          element: <Policy></Policy>,
         },
         {
           path: "/aboutMe",
