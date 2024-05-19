@@ -3,7 +3,7 @@
   /* align-items: center; */
   justify-content: center;
   gap: 100px;
-  margin-top: 70px;
+  margin-top: 150px;
   margin-bottom: 120px;
 }
 .get_in_touch_div {
@@ -88,6 +88,12 @@
 }
 
 @media screen and (max-width: 800px) {
+  .get_in_touch_div {
+    text-align: left;
+  }
+  .booking_btn {
+    margin-left: 10px;
+  }
   .get_in_touch {
     text-align: left;
     margin-left: 10px;

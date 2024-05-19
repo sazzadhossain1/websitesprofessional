@@ -28,6 +28,7 @@ import SeoServices from "./components/SeoServices/SeoServices";
 import SeoServicesAgency from "./components/SeoServicesAgency/SeoServicesAgency";
 import WordPressSeo from "./components/WordPressSeo/WordPressSeo";
 import Policy from "./components/Policy/Policy";
+import Sitemap from "./components/Sitemap/Sitemap";
 
 function App() {
   const router = createBrowserRouter([
@@ -57,38 +58,21 @@ function App() {
           path: "/signUp",
           element: <SignUp></SignUp>,
         },
-        {
-          path: "/homeSignUp",
-          element: <HomeSignUp></HomeSignUp>,
-        },
-        {
-          path: "/services",
-          element: <Services></Services>,
-        },
-        {
-          path: "/service/:serviceId",
 
-          loader: async ({ params }) => {
-            return fetch(
-              `https://admin.websitesprofessional.com/api/service/${params.serviceId}`
-            );
-          },
-          element: <Service></Service>,
+        {
+          path: "/sitemap",
+          element: <Sitemap></Sitemap>,
         },
 
         {
-          path: "/serviceAllMap",
+          path: "/policy",
           loader: async () => {
-            return fetch("https://admin.websitesprofessional.com/api/service");
+            return fetch("https://admin.websitesprofessional.com/api/policy");
           },
-          element: <ServiceAllMap></ServiceAllMap>,
+          element: <Policy></Policy>,
         },
         {
-          path: "/projects",
-          element: <Projects></Projects>,
-        },
-        {
-          path: "/digital_marketing",
+          path: "/digitalmarketing",
           loader: async () => {
             return fetch(
               "https://admin.websitesprofessional.com/api/digital_marketing"
@@ -97,7 +81,7 @@ function App() {
           element: <DigitalMarketing></DigitalMarketing>,
         },
         {
-          path: "/seo_expart",
+          path: "/seoexperts",
           loader: async () => {
             return fetch(
               "https://admin.websitesprofessional.com/api/seo_expart"
@@ -140,12 +124,36 @@ function App() {
           element: <WordPressSeo></WordPressSeo>,
         },
         {
-          path: "/policy",
-          loader: async () => {
-            return fetch("https://admin.websitesprofessional.com/api/policy");
-          },
-          element: <Policy></Policy>,
+          path: "/homeSignUp",
+          element: <HomeSignUp></HomeSignUp>,
         },
+        {
+          path: "/services",
+          element: <Services></Services>,
+        },
+        {
+          path: "/service/:serviceId",
+
+          loader: async ({ params }) => {
+            return fetch(
+              `https://admin.websitesprofessional.com/api/service/${params.serviceId}`
+            );
+          },
+          element: <Service></Service>,
+        },
+
+        {
+          path: "/serviceAllMap",
+          loader: async () => {
+            return fetch("https://admin.websitesprofessional.com/api/service");
+          },
+          element: <ServiceAllMap></ServiceAllMap>,
+        },
+        {
+          path: "/projects",
+          element: <Projects></Projects>,
+        },
+
         {
           path: "/aboutMe",
           loader: async () => {
@@ -162,6 +170,7 @@ function App() {
 
           element: <Review></Review>,
         },
+
         {
           path: "/blogPosts",
           element: <BlogPost></BlogPost>,
@@ -169,7 +178,7 @@ function App() {
         {
           path: "/blog/:blogId",
 
-          element: <Blog></Blog>,
+          element: <OnlineMarketing></OnlineMarketing>,
         },
         {
           path: "/blogs/:blogId",
@@ -179,7 +188,7 @@ function App() {
               `https://admin.websitesprofessional.com/api/blog/${params.blogId}`
             );
           },
-          element: <OnlineMarketing></OnlineMarketing>,
+          element: <Blog></Blog>,
         },
         {
           path: "/contact",

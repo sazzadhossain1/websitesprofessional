@@ -52,14 +52,14 @@ const Review = () => {
   // ];
 
   useEffect(() => {
-    fetch("https://admin.websitesprofessional.com/api/home/testimonial")
+    fetch("https://admin.websitesprofessional.com/api/testimonial")
       .then((res) => res.json())
-      .then((data) => setItems(data))
+      .then((data) => setItems(data.data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   const [items, setItems] = useState(null);
-  // console.log(testimonials);
+  // console.log(items);
 
   if (!items || !Array.isArray(items.data)) {
     return <div>Loading...</div>;
@@ -67,10 +67,12 @@ const Review = () => {
 
   // console.log(items);
   return (
-    <div className="reviewCarousel">
-      <div className="review_parent_div inner"></div>
-      <div className="inner">
-        <Carousel items={items}></Carousel>
+    <div>
+      <div className="reviewCarousel">
+        <div className="review_parent_div inner"></div>
+        <div className="inner">
+          <Carousel items={items}></Carousel>
+        </div>
       </div>
     </div>
   );

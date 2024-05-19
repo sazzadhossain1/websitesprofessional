@@ -1,12 +1,15 @@
 .homeSignUp_parent_div {
   background-color: #f6bb17;
   /* padding: 100px 0; */
+  margin: auto;
 }
 .homeSignUp_grid_div {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
-  /* width: 80%; */
+  align-items: center; */
+  width: 30%;
+  /* background-color: red; */
+  margin: auto;
 }
 .homeSignUp_text_div {
   /* background-color: red; */
@@ -20,14 +23,14 @@
   font-size: 35px;
   color: white;
   margin-bottom: 20px;
-  display: none;
+  /* display: none; */
 }
 .homeSignUp_cart_div {
   width: 40%;
   margin-right: auto;
   padding: 70px 20px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   /* box-shadow: 1px 1px 20px 1px rgb(228, 228, 228); */
   border-radius: 10px;
 
@@ -36,10 +39,10 @@
 
 .homeSignUp_input {
   border: 1px solid rgb(199, 199, 199);
-  width: 100%;
+
   padding: 15px 10px;
   /* border-radius: 10px; */
-  width: 100%;
+  width: 320%;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -53,6 +56,7 @@
   font-weight: 500;
   height: 50px;
   margin-bottom: 10px;
+
   box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.253);
 }
 
@@ -90,12 +94,19 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .homeSignUp_grid_div {
+    /* background-color: red; */
+    width: 100%;
+  }
   .homeSignUp_cart_div {
     width: 80%;
   }
 
   .homeSignUp_inner_div {
     width: 90%;
+  }
+  .homeSignUp_input {
+    width: 100%;
   }
 }
 @media screen and (max-width: 700px) {
