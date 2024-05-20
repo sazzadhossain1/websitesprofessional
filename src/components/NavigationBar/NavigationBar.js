@@ -84,11 +84,11 @@ const NavigationBar = () => {
           </div>
 
           <div className="navigation_login_signUp_div">
-            <Link to="/login">
+            {/* <Link to="/login">
               <button className="nav_btn">
                 <Link to="/login">Login</Link>
               </button>
-            </Link>
+            </Link> */}
 
             <Link to="/signUp">
               <button className="nav_btn">Sign up</button>
@@ -128,11 +128,11 @@ const NavigationBar = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
-            <li>
+            {/* <li>
               <Link className="login" to="/login">
                 Login
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link className="signUP" to="/signUp">
                 Sign up

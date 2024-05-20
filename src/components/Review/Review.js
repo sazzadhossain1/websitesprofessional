@@ -1,10 +1,5 @@
 import "./Review.css";
 
-import reviewPhotoOne from "../../accts/reviewPhoto/reviewPhotoOne.webp";
-import reviewPhotoTwo from "../../accts/reviewPhoto/reviewPhotoTwo.png";
-import reviewPhotoThree from "../../accts/reviewPhoto/reviewPhotoThree.jpeg";
-import reviewPhotoFour from "../../accts/reviewPhoto/reviewPhotoFour.jpeg";
-import reviewPhotoFive from "../../accts/reviewPhoto/reviewPhotoFive.jpeg";
 import Carousel from "../Carousel/Carousel";
 import { useEffect, useState } from "react";
 

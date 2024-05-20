@@ -42,11 +42,8 @@ const Carousel = ({ items }) => {
     return htmlString.replace(/<\/?p>/g, "");
   };
   return (
-    <div>
-      <div
-        className="carousel_item"
-        //   style={{ transform: `translate(-${activeIndex * 100}%)` }}
-      >
+    <div className="carousel_parent_div">
+      {/* <div className="carousel_item">
         {currentItem === undefined ? (
           ""
         ) : (
@@ -89,7 +86,7 @@ const Carousel = ({ items }) => {
             </p>
           </div>
         )}
-      </div>
+      </div> */}
 
       <>
         <Swiper

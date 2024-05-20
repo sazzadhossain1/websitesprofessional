@@ -90,14 +90,14 @@ function App() {
           element: <SeoExperts></SeoExperts>,
         },
         {
-          path: "/seo_firm",
+          path: "/seofirm",
           loader: async () => {
             return fetch("https://admin.websitesprofessional.com/api/seo_firm");
           },
           element: <SeoFirm></SeoFirm>,
         },
         {
-          path: "/seo_service",
+          path: "/seoservice",
           loader: async () => {
             return fetch(
               "https://admin.websitesprofessional.com/api/seo_service"
@@ -106,7 +106,7 @@ function App() {
           element: <SeoServices></SeoServices>,
         },
         {
-          path: "/seo_service_agency",
+          path: "/seoserviceagency",
           loader: async () => {
             return fetch(
               "https://admin.websitesprofessional.com/api/seo_service_agency"
@@ -115,13 +115,18 @@ function App() {
           element: <SeoServicesAgency></SeoServicesAgency>,
         },
         {
-          path: "/wordpress_seo",
+          path: "/wordpressseo",
           loader: async () => {
             return fetch(
               "https://admin.websitesprofessional.com/api/wordpress_seo"
             );
           },
           element: <WordPressSeo></WordPressSeo>,
+        },
+        {
+          path: "/onlinemarketing",
+
+          element: <OnlineMarketing></OnlineMarketing>,
         },
         {
           path: "/homeSignUp",
@@ -175,11 +180,7 @@ function App() {
           path: "/blogPosts",
           element: <BlogPost></BlogPost>,
         },
-        {
-          path: "/blog/:blogId",
 
-          element: <OnlineMarketing></OnlineMarketing>,
-        },
         {
           path: "/blogs/:blogId",
 

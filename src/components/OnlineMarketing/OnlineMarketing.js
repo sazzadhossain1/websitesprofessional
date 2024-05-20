@@ -6,7 +6,7 @@ import BlogPost from "../BlogPost/BlogPost";
 
 const OnlineMarketing = () => {
   return (
-    <div>
+    <div className="onlinemarketing_parent_div">
       <h1>This is Online Marketing</h1>
     </div>
   );

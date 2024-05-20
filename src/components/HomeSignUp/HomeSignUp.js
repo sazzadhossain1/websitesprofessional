@@ -1,12 +1,13 @@
 import React from "react";
 import "./HomeSignUp.css";
+import homeSignUpPhoto from "../../accts/homeSignUpPhoto/homeSignUpPhoto.jpeg";
 const HomeSignUp = () => {
   return (
     <div className="homeSignUp_parent_div">
       <div className="homeSignUp_grid_div">
-        {/* <div className="homeSignUp_text_div">
-          <h1 className="homeSignUP_In_heading">Sign Up</h1>
-        </div> */}
+        <div className="homeSignUp_text_div">
+          <img src={homeSignUpPhoto} alt="" />
+        </div>
         <div className="homeSignUp_cart_div">
           <div className="homeSignUp_inner_div">
             <h1 className="homeSignUP_In_heading_in_cart">Sign Up </h1>

@@ -115,6 +115,14 @@ const Footer = () => {
           <Link to="/contact" className="footer_link">
             Contacts
           </Link>
+          <br />
+          <Link
+            target="_blank"
+            to="https://admin.websitesprofessional.com/login"
+            className="footer_link"
+          >
+            Admin Login
+          </Link>
         </div>
         {/* <div className="footer_aboutMe_div">
           <Link to="/aboutMe" className="footer_link">
@@ -131,7 +139,7 @@ const Footer = () => {
         </div> */}
 
         <div className="footer-contact_div">
-          <p className="footer_contact_header">Contacts</p>
+          <p className="footer_contact_header">Social Media Handles</p>
 
           {/* <p className="footer_info_email">info@websitesprofessional.com</p>
           <p className="footer_number">704-891-4329</p> */}

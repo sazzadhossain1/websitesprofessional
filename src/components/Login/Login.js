@@ -3,6 +3,8 @@ import "./Login.css";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   return (
     <div className="login_parent_div">
       <div className="login_cart_div">
@@ -24,10 +26,10 @@ const Login = () => {
           <br />
           <Link className="forgot">Forgot Password</Link>
         </div>
-        <p className="dont_have">Don't have account?</p>
+        {/* <p className="dont_have">Don't have account?</p>
         <Link className="sign_up" to="/signUp">
           Sign up
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

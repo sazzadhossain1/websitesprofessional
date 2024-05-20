@@ -1,3 +1,6 @@
+.carousel_parent_div {
+  margin-top: 100px;
+}
 .carousel_item {
   /* background-color: red; */
   margin-bottom: -120px;
@@ -28,17 +31,22 @@
   margin-left: 50px;
   margin-bottom: 100px;
 }
-.carousel_Photo {
+/* .carousel_Photo {
   border-radius: 50%;
   width: 220px;
   height: 220px;
   margin: auto;
   margin-top: -100px;
   margin-bottom: 20px;
-}
+} */
 
 .mySwiper {
-  width: 85%;
+  /* width: 95%; */
+  /* background-color: aqua; */
+}
+.slider_Photo {
+  /* height: 170px; */
+  width: 100%;
 }
 /* @media screen and (max-width: 1052px) {
   .carousel_flex_div {

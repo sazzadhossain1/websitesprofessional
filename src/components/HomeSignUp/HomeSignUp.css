@@ -4,16 +4,17 @@
   margin: auto;
 }
 .homeSignUp_grid_div {
-  /* display: flex;
+  display: flex;
   justify-content: space-between;
-  align-items: center; */
-  width: 30%;
+  align-items: center;
+  width: 75%;
   /* background-color: red; */
   margin: auto;
 }
 .homeSignUp_text_div {
   /* background-color: red; */
-  width: 40%;
+  width: 45%;
+  margin: auto;
 }
 .homeSignUP_In_heading {
   font-size: 35px;
@@ -42,7 +43,7 @@
 
   padding: 15px 10px;
   /* border-radius: 10px; */
-  width: 320%;
+  width: 110%;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -64,17 +65,26 @@
   border: 2px solid white;
 }
 @media screen and (max-width: 1200px) {
+  .homeSignUp_text_div {
+    margin-top: 50px;
+    margin-bottom: -50px;
+  }
   .homeSignUp_cart_div {
-    width: 60%;
+    width: 100%;
+    margin-top: 0;
+  }
+  .homeSignUp_grid_div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 900px) {
   .homeSignUp_cart_div {
-    width: 70%;
+    /* width: 70%; */
   }
 
   .homeSignUp_inner_div {
-    width: 80%;
+    width: 90%;
   }
 }
 @media screen and (max-width: 800px) {
