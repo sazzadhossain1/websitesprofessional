@@ -2,6 +2,7 @@ import "./Review.css";
 
 import Carousel from "../Carousel/Carousel";
 import { useEffect, useState } from "react";
+import TestimonialSlider from "../TestimonialSlider/TestimonialSlider";
 
 const Review = () => {
   // const items = [
@@ -66,7 +67,8 @@ const Review = () => {
       <div className="reviewCarousel">
         <div className="review_parent_div inner"></div>
         <div className="inner">
-          <Carousel items={items}></Carousel>
+          {/* <Carousel items={items}></Carousel> */}
+          <TestimonialSlider items={items}></TestimonialSlider>
         </div>
       </div>
     </div>

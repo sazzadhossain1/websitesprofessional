@@ -43,7 +43,7 @@ const Carousel = ({ items }) => {
   };
   return (
     <div className="carousel_parent_div">
-      {/* <div className="carousel_item">
+      <div className="carousel_item">
         {currentItem === undefined ? (
           ""
         ) : (
@@ -86,9 +86,9 @@ const Carousel = ({ items }) => {
             </p>
           </div>
         )}
-      </div> */}
+      </div>
 
-      <>
+      {/* <>
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -114,7 +114,7 @@ const Carousel = ({ items }) => {
             ))}
           </div>
         </Swiper>
-      </>
+      </> */}
     </div>
   );
 };
