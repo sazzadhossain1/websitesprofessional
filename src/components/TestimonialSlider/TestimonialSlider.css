@@ -39,3 +39,9 @@
 .testimonial_p {
   line-height: 26px;
 }
+
+@media screen and (max-width: 600px) {
+  .testimonial_map_div {
+    width: 100%;
+  }
+}

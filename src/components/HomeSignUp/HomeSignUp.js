@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomeSignUp.css";
-import homeSignUpPhoto from "../../accts/homeSignUpPhoto/homeSignUpPhoto.jpeg";
+import homeSignUpPhoto from "../../accts/homeSignUpPhoto/homeSignUpPhoto.png";
 const HomeSignUp = () => {
   return (
     <div className="homeSignUp_parent_div">
