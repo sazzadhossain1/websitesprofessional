@@ -60,11 +60,7 @@ const Home = () => {
       <HeroSection apiInfo={getApi} />
 
       {/* Service Start */}
-      <h1>dfdfdfdfd</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias
-        numquam nostrum excepturi enim qui placeat animi velit ut tenetur.
-      </p>
+
       <div>
         <div className="service_main_parent_div">
           <h1 className="Services">Services</h1>
