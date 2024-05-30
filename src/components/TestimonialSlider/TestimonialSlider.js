@@ -5,7 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const TestimonialSlider = ({ items }) => {
-  console.log(items.data);
+  // console.log(items.data);
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.

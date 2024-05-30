@@ -8,7 +8,7 @@ import {
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import navigationLogo from "../../accts/navigationLogo.png";
+import navigationLogo from "../../accts/BlackLogo.png";
 
 const NavigationBar = () => {
   let [state, setState] = useState({ clicked: false });

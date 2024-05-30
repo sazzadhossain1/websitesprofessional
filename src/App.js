@@ -61,6 +61,9 @@ function App() {
 
         {
           path: "/sitemap",
+          loader: async () => {
+            return fetch("https://admin.websitesprofessional.com/api/sitemap");
+          },
           element: <Sitemap></Sitemap>,
         },
 
