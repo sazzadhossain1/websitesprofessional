@@ -8,6 +8,7 @@ const Policy = () => {
   return (
     <div>
       <h1 className="posicy_title">{getPolicyApi.data.title}</h1>
+      <p>{getPolicyApi.data.details}</p>
     </div>
   );
 };
