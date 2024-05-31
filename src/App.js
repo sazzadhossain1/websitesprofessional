@@ -100,7 +100,7 @@ function App() {
           element: <SeoFirm></SeoFirm>,
         },
         {
-          path: "/seoservice",
+          path: "/seoservices",
           loader: async () => {
             return fetch(
               "https://admin.websitesprofessional.com/api/seo_service"
@@ -128,7 +128,11 @@ function App() {
         },
         {
           path: "/onlinemarketing",
-
+          loader: async () => {
+            return fetch(
+              "https://admin.websitesprofessional.com/api/online_marketing"
+            );
+          },
           element: <OnlineMarketing></OnlineMarketing>,
         },
         {

@@ -1,3 +1,14 @@
 .seoserviceagency_parent_div {
-  margin-top: 100px;
+  margin-top: 120px;
+}
+
+.seoserviceAgency_photo {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.seoserviceAgency_text_div {
+  text-align: left;
+  width: 50%;
+  margin: auto;
 }
