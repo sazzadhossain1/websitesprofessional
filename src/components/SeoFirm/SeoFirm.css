@@ -1,3 +1,13 @@
 .seo_firm_parent_div {
-  margin-top: 100px;
+  margin-top: 120px;
+}
+.serFirm_photo {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.serFirm_text_div {
+  text-align: left;
+  width: 50%;
+  margin: auto;
 }

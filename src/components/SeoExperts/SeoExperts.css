@@ -1,3 +1,14 @@
 .seo_experts_parent_div {
-  margin-top: 100px;
+  margin-top: 120px;
+}
+.seoExpert_photo {
+  margin: auto;
+  margin-top: 20px;
+}
+
+.seoExpert_text_div {
+  text-align: left;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
 }

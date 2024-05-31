@@ -18,6 +18,7 @@ const DigitalMarketing = () => {
             <img className="digital_photo" src={rootUrl + data.image} alt="" />
             <div className="digital_text_div">
               <p>{data.title}</p>
+              <p>{data.price}</p>
               <p dangerouslySetInnerHTML={{ __html: data.details }}></p>
             </div>
           </div>
