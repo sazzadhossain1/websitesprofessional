@@ -1,3 +1,30 @@
 .sitemap_parent-div {
   margin-top: 100px;
 }
+.siteMap_map_div {
+  width: 50%;
+  text-align: left;
+  margin: auto;
+}
+.siteMap_photo {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.siteMap_title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.siteMap_sub_title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.siteMap_price {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.siteMap_details {
+}
