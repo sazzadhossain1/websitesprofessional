@@ -47,7 +47,7 @@ const Footer = () => {
       .replace("Digital Marketing Consultant", "")
       .trim();
     // Remove the specific phone number "704-891-4329"
-    formattedAddress = formattedAddress.replace("704-891-4329", "").trim();
+    formattedAddress = formattedAddress.replace("973-883-1223", "").trim();
     // Further clean up, if necessary, e.g., removing extra spaces or commas
     formattedAddress = formattedAddress.replace(/,+\s*$/, "").trim();
     return formattedAddress;

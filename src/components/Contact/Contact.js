@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -6,8 +6,70 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data = {
+      members: [
+        {
+          email_address: formData.email,
+          status: "subscribed",
+          merge_fields: {
+            FNAME: formData.name,
+            PHONE: formData.phone,
+            MESSAGE: formData.message,
+          },
+        },
+      ],
+    };
+
+    try {
+      const response = await fetch(
+        `https://mailchi.mp/ea47c29ee62a/sign-up-for-digital-marketing-tips`,
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer YOUR_API_KEY`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+      if (response.ok) {
+        const jsonResponse = await response.json();
+        console.log(jsonResponse);
+        alert("Thank you for your message. We will get back to you soon!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        const errorResponse = await response.json();
+        console.error("Error:", errorResponse);
+        alert("An error occurred. Please try again later.");
+      }
+    } catch (error) {
+      console.error("There was an error!", error);
+      alert("An error occurred. Please try again later.");
+    }
+  };
 
   return (
     <div className="contact_grid_div">
@@ -40,13 +102,15 @@ const Contact = () => {
         <p>
           Please fill in the form so we can get <br /> back to you
         </p>
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <div>
             <input
               className="contact_input"
               id="name"
-              type="name"
+              type="text"
               placeholder="Name"
+              value={formData.name}
+              onChange={handleInputChange}
             />
           </div>
           <div>
@@ -55,28 +119,35 @@ const Contact = () => {
               id="email"
               type="email"
               placeholder="Email"
+              value={formData.email}
+              onChange={handleInputChange}
             />
           </div>
           <div>
             <input
               className="contact_input"
               id="phone"
-              type="phone"
+              type="tel"
               placeholder="Phone"
+              value={formData.phone}
+              onChange={handleInputChange}
             />
           </div>
           <div>
             <textarea
               className="contact_text_area"
-              name="message"
               id="message"
               cols="30"
               rows="10"
               placeholder="Message"
+              value={formData.message}
+              onChange={handleInputChange}
             ></textarea>
           </div>
           <div className="submit_div">
-            <button className="submit_btn">Submit</button>
+            <button className="submit_btn" type="submit">
+              Submit
+            </button>
           </div>
         </form>
       </div>

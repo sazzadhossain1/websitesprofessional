@@ -1,8 +1,9 @@
 .footer_parent_div {
   /* background-color: #212529; */
-  background-color: rgb(77, 77, 77);
+  background-color: rgb(177, 177, 177);
 
-  color: #ffbf3f;
+  /* color: #ffbf3f; */
+  color: black;
   font-size: 15px;
   margin-top: 50px;
 }
