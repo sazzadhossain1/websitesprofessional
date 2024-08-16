@@ -137,6 +137,9 @@ function App() {
         },
         {
           path: "/homeSignUp",
+          // loader: async () => {
+          //   return fetch("47fe62127dd63c09af9147706769a912-us18");
+          // },
           element: <HomeSignUp></HomeSignUp>,
         },
         {
