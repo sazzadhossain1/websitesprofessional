@@ -6,6 +6,8 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox,
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -99,10 +101,10 @@ const Contact = () => {
         </div>
       </div>
       <div className="contact_input_div">
-        <p>
+        {/* <p>
           Please fill in the form so we can get <br /> back to you
-        </p>
-        <form onSubmit={handleSubmit}>
+        </p> */}
+        {/* <form onSubmit={handleSubmit}>
           <div>
             <input
               className="contact_input"
@@ -149,7 +151,13 @@ const Contact = () => {
               Submit
             </button>
           </div>
-        </form>
+        </form> */}
+        <Link
+          to="https://mailchi.mp/0bd32c491d98/digital-marketing-tips"
+          target="_blank"
+        >
+          <button className="contact_me">Contact Me</button>
+        </Link>
       </div>
     </div>
   );

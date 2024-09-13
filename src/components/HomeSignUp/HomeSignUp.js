@@ -3,45 +3,6 @@ import "./HomeSignUp.css";
 import homeSignUpPhoto from "../../accts/homeSignUpPhoto/homeSignUpPhoto.png";
 
 const HomeSignUp = () => {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState("");
-  const [message, setMessage] = useState(""); // State for feedback message
-
-  // const subscribe = async (e) => {
-  //   e.preventDefault();
-
-  //   try {
-  //     const res = await fetch(
-  //       `https://us18.api.mailchimp.com/3.0/lists/6d1a066df7/members`,
-  //       {
-  //         method: "POST",
-  //         headers: {
-  //           Authorization: `apikey 47fe62127dd63c09af9147706769a912-us18`,
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify({
-  //           email_address: email,
-  //           status: "subscribed",
-  //           merge_fields: {
-  //             FNAME: status,
-  //           },
-  //         }),
-  //       }
-  //     );
-
-  //     if (!res.ok) {
-  //       const errorDetails = await res.json();
-  //       console.error("Error details:", errorDetails);
-  //       setMessage("Failed to subscribe: " + errorDetails.detail);
-  //     } else {
-  //       setMessage("Subscribed successfully!");
-  //     }
-  //   } catch (error) {
-  //     console.error("Fetch error:", error);
-  //     setMessage("Failed to subscribe.");
-  //   }
-  // };
-
   return (
     <div className="homeSignUp_parent_div">
       <div className="homeSignUp_grid_div">
@@ -51,30 +12,29 @@ const HomeSignUp = () => {
         <div className="homeSignUp_cart_div">
           <div className="homeSignUp_inner_div">
             <h1 className="homeSignUP_In_heading_in_cart">Sign Up </h1>
-            <div>
+            <form action="">
               <div>
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  value={status}
-                  name="name"
-                  // onChange={(e) => setStatus(e.target.value)}
-                  className="homeSignUp_input"
-                />
+                <div>
+                  <input
+                    for="MERGE1"
+                    type="text"
+                    placeholder="Full Name"
+                    name="n"
+                    className="homeSignUp_input"
+                  />
+                </div>
+                <div>
+                  <input
+                    for="MERGE0"
+                    type="email"
+                    placeholder="Email"
+                    name="id"
+                    className="homeSignUp_input"
+                  />
+                </div>
               </div>
-              <div>
-                <input
-                  type="email"
-                  placeholder="Email"
-                  name="email"
-                  value={email}
-                  // onChange={(e) => setEmail(e.target.value)}
-                  className="homeSignUp_input"
-                />
-              </div>
-            </div>
+            </form>
             <button className="homeSignUp_btn">Submit</button>
-            {/* {message && <p>{message}</p>}  */}
           </div>
         </div>
       </div>
@@ -83,3 +43,7 @@ const HomeSignUp = () => {
 };
 
 export default HomeSignUp;
+// https://websitesprofessional.us18.list-manage.com/subscribe/post
+
+//f02c1cdf572ef1792530cd77c
+//6d1a066df7
