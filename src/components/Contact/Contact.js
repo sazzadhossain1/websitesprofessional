@@ -98,13 +98,21 @@ const Contact = () => {
           >
             <button className="booking_btn">Appointment</button>
           </Link>
+          &nbsp;
+          <Link
+            to="https://mailchi.mp/0bd32c491d98/digital-marketing-tips"
+            target="_blank"
+          >
+            <button className="contact_me">Contact Me</button>
+          </Link>
         </div>
       </div>
-      <div className="contact_input_div">
-        {/* <p>
+
+      {/* <div className="contact_input_div"> */}
+      {/* <p>
           Please fill in the form so we can get <br /> back to you
         </p> */}
-        {/* <form onSubmit={handleSubmit}>
+      {/* <form onSubmit={handleSubmit}>
           <div>
             <input
               className="contact_input"
@@ -152,13 +160,13 @@ const Contact = () => {
             </button>
           </div>
         </form> */}
-        <Link
+      {/* <Link
           to="https://mailchi.mp/0bd32c491d98/digital-marketing-tips"
           target="_blank"
         >
           <button className="contact_me">Contact Me</button>
-        </Link>
-      </div>
+        </Link> */}
+      {/* </div> */}
     </div>
   );
 };
